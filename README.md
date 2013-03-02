@@ -1,7 +1,4 @@
-musicplayer
-===========
+Repo for random files.  Currently includes the following directories:
 
-Music is added in 'Music' directory.
-For each file you add, you can add tags in 'Tags.csv'
-
-Currently the music player does not have much of an interface, nor does it shuffle your files for you.  But it's a start.
+"data analysis": containing subdirectories for monthly practice doing data analysis
+"music player": a quick attempt at a program for playing my music based on tags
