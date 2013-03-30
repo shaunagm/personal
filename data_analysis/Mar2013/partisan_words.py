@@ -18,8 +18,7 @@ BASE_URL = 'http://capitolwords.org/api/1/text.json?'
 query = BASE_URL+'phrase={phrase}&start_date={start_date}&end_date={end_date}&party={party}&granularity=month&apikey={SUNLIGHT_API_KEY}'
 
 # function to query and print to file
-def query_and_print(partyname,filename,query,phrase):
-	party = partyname
+def query_and_print(party,filename,query,phrase):
 	query = query.format(phrase=phrase, start_date=start_date, end_date=end_date, party=party,SUNLIGHT_API_KEY=SUNLIGHT_API_KEY)
 	data = urllib.urlopen(query).read()
 	results = json.loads(data)
