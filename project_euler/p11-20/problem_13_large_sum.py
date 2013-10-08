@@ -103,4 +103,12 @@ listNum = [
 	53503534226472524250874054075591789781264330331690
 ]
 
-print listNum[3]
+# Start with the obvious
+sum = 0
+for x in range(0,len(listNum)):
+	sum += listNum[x]	
+print sum
+
+
+# Notes:
+# ... I feel like I'm missing something, but that worked & fast, so. 
