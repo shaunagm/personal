@@ -77,18 +77,14 @@
 							<li class="filter" data-filter="organizing">Organizing</li>
 							<li class="filter" data-filter="teaching">Teaching</li>
 							<li class="filter" data-filter="research">Research</li>
-							<li class="filter" data-filter="other_type">Other</li>
 						</ul>
 					</div>
 
 					<div class="controls">	
-						<h3>Topic</h3>
+						<h3>Status</h3>
 						<ul>
-							<li class="filter" data-filter="science">Science</li>
-							<li class="filter" data-filter="technology">Technology</li>
-							<li class="filter" data-filter="politics">Politics</li>
-							<li class="filter" data-filter="feminism">Feminism</li>
-							<li class="filter" data-filter="other_topic">Other</li>
+							<li class="filter" data-filter="current">Current Only</li>
+							<li class="filter" data-filter="past">Past Only</li>
 						</ul>
 					</div>
 
@@ -107,75 +103,120 @@
 			
 			<ul id="Grid">
 
-				<li class="mix programming teaching organizing work" onclick=highlight(7)>
+				<li class="mix programming teaching organizing work current" onclick=highlight(7)>
 					<div class="figure">
 						<img src="thumbs/openhatch.png" alt="" class="hascaption" />
 						<p class="caption">OpenHatch</p>
 					</div>  
 				</li>
-				<li class="mix writing" onClick=highlight(0)>
+				<li class="mix writing research volunteer programming current" onClick=highlight(2)>
+					<div class="figure">
+						<img src="thumbs/osc.jpg" alt="" class="hascaption" />
+						<p class="caption">Open Science Collective</p>
+					</div>  
+				</li>
+				<li class="mix writing personal current" onClick=highlight(0)>
 					<div class="figure">
 						<img src="thumbs/personal_blog.png" alt="" class="hascaption" />
 						<p class="caption">Personal Blog</p>
 					</div>  						 
 	 			</li>
-				<li class="mix writing tecnology" onClick=highlight(1)>
-					<div class="figure">
-						<img src="thumbs/openhatch_blog.png" alt="" class="hascaption" />
-						<p class="caption">OpenHatch Blog</p>
-					</div>  
-				</li>
-				<li class="mix writing science volunteer programming" onClick=highlight(2)>
-					<div class="figure">
-						<img src="thumbs/osc_blog.png" alt="" class="hascaption" />
-						<p class="caption">OSC Blog</p>
-					</div>  
-				</li>
-				<li class="mix teaching work" onClick=highlight(8)>
+				<li class="mix teaching work current" onClick=highlight(8)>
 					<div class="figure">
 						<img src="thumbs/partsandcrafts.jpg" alt="" class="hascaption" />
 						<p class="caption">Parts & Crafts</p>
 					</div> 
 				</li>
-				<li class="mix research education science" onClick=highlight(13)>
-					<div class="figure">
-						<img src="thumbs/livinglinks.jpg" alt="" class="hascaption" />
-						<p class="caption">Living Links Lab</p>
-					</div> 
-				</li>
-				<li class="mix education" onClick=highlight(14)>
-					<div class="figure">
-						<img src="thumbs/hampshire.jpg" alt="" class="hascaption" />
-						<p class="caption">B.A., Hampshire College</p>
-					</div> 
-				</li>
-				<li class="mix education science research writing" onClick=highlight(15)>
-					<div class="figure">
-						<img src="thumbs/div3.jpg" alt="" class="hascaption" />
-						<p class="caption">Div III (Senior Thesis)</p>
-					</div> 
-				</li>
-				<li class="mix writing" onClick=highlight(3)>
+				<li class="mix writing personal current" onClick=highlight(3)>
 					<div class="figure">
 						<img src="thumbs/fiction.jpg" alt="" class="hascaption" />
 						<p class="caption">Fiction</p>
 					</div> 
 				</li>
-				<li class="mix programming work" onClick=highlight(4)>Web Design & Development</li>
-				<li class="mix programming work" onClick=highlight(5)>MediaLab</li>
-				<li class="mix programming work" onClick=highlight(6)>Laser Lab</li>
-				<li class="mix teaching work" onClick=highlight(9)>Summer Institute for the Gifted</li>
-				<li class="mix organizing politics volunteer" onClick=highlight(10)>OpenGovBoston</li>
-				<li class="mix research programming teaching work science" onClick=highlight(11)>Moral Cognition Lab</li>
-				<li class="mix research programming work science" onClick=highlight(12)>UC Davis Imaging Research Center</li>
-				<li class="mix personal feminism" onClick=highlight(16)>Digitizing WCWeekly</li>	
-				<li class="mix politics volunteer" onClick=highlight(17)>Political Internships</li>
-				<li class="mix organizing teaching volunteer" onClick=highlight(18)>One-time events</li>
-				<li class="mix teaching science" onClick=highlight(19)>TA Cognitive Neuroscience</li>
-				<li class="mix education" onClick=highlight(20)>Non-degree Coursework</li>
-				<li class="mix personal" onClick=highlight(21)>Galaxy Rise</li>
-				<li class="mix personal science" onClick=highlight(22)>MetaScience</li>
-				<li class="mix volunteer" onClick=highlight(23)>Samaritans Hotline</li>
+				<li class="mix organizing politics volunteer current" onClick=highlight(10)>
+					<div class="figure">
+						<img src="thumbs/ogb.jpg" alt="" class="hascaption" />
+						<p class="caption">OpenGovBoston</p>
+					</div>
+				</li>
+				<li class="mix organizing teaching volunteer current" onClick=highlight(18)>
+					<div class="figure">
+						<img src="thumbs/eventorganizing.jpg" alt="" class="hascaption" />
+						<p class="caption">Event Organizing</p>
+					</div>  
+				</li>
+				<li class="mix personal feminism current" onClick=highlight(16)>
+					<div class="figure">
+						<img src="thumbs/wcweekly.jpg" alt="" class="hascaption" />
+						<p class="caption">Digitizing W&C's Weekly</p>
+					</div>  				
+				</li>	
+				<li class="mix programming work past" onClick=highlight(4)>
+					<div class="figure">
+						<img src="thumbs/webdandd.jpg" alt="" class="hascaption" />
+						<p class="caption">Web Development</p>
+					</div>
+				</li>
+				<li class="mix volunteer past" onClick=highlight(23)>
+					<div class="figure">
+						<img src="thumbs/samaritans.jpg" alt="" class="hascaption" />	<!-- Credit: http://www.flickr.com/photos/davedugdale/5104920233/ www.learningDSLRVideo.com -->
+						<p class="caption">Samaritans Crisis Line</p>
+					</div>
+				</li>
+				<li class="mix programming work past" onClick=highlight(5)>
+					<div class="figure">
+						<img src="thumbs/medialab.jpg" alt="" class="hascaption" />
+						<p class="caption">MIT Media Lab</p>
+					</div>
+				</li>
+				<li class="mix programming work past" onClick=highlight(6)>
+					<div class="figure">
+						<img src="thumbs/laser.jpg" alt="" class="hascaption" />
+						<p class="caption">Harvard SEAS Laser Lab</p>
+					</div>
+				</li>
+				<li class="mix research programming teaching work science past" onClick=highlight(11)>
+					<div class="figure">
+						<img src="thumbs/mcl.jpg" alt="" class="hascaption" />
+						<p class="caption">Moral Cognition Lab</p>
+					</div>  
+				</li>
+				<li class="mix teaching work past" onClick=highlight(9)>
+					<div class="figure">
+						<img src="thumbs/sig.jpg" alt="" class="hascaption" />
+						<p class="caption">S.I.G.</p>
+					</div>
+				</li>
+				<li class="mix research programming work science past" onClick=highlight(12)>
+					<div class="figure">
+						<img src="thumbs/irc.jpg" alt="" class="hascaption" />
+						<p class="caption">Imaging Research Center</p>
+					</div>
+				</li>
+				<li class="mix education past teaching research" onClick=highlight(14)>
+					<div class="figure">
+						<img src="thumbs/hampshire.jpg" alt="" class="hascaption" />
+						<p class="caption">B.A., Hampshire College</p>
+					</div> 
+				</li>
+				<li class="mix education science research writing past" onClick=highlight(15)>
+					<div class="figure">
+						<img src="thumbs/div3.jpg" alt="" class="hascaption" />
+						<p class="caption">Div III (Senior Thesis)</p>
+					</div> 
+				</li>
+				<li class="mix research education science past" onClick=highlight(13)>
+					<div class="figure">
+						<img src="thumbs/livinglinks.jpg" alt="" class="hascaption" />
+						<p class="caption">Living Links Lab</p>
+					</div> 
+				</li>
+				<li class="mix politics volunteer past" onClick=highlight(17)>
+					<div class="figure">
+						<img src="thumbs/internships.jpg" alt="" class="hascaption" />
+						<p class="caption">Political Internships</p>
+					</div> 
+				</li>
 
 				<li class="gap"></li> <!-- "gap" elements fill in the gaps in justified grid -->
 			</ul>
