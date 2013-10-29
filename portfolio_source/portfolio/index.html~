@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,700' rel='stylesheet' type='text/css'/>
+		<link rel="stylesheet" type="text/css" href="template.css"/>
+		<link rel="shortcut icon" type="image/x-icon" href="im/favicon.ico"/>
+		
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+		
+		<!--
+		Adapted from:  
+		MIXITUP BOILERPLATE TEMPLATE
+		Concept and development by Patrick Kunka
+		
+		MixItUp is free for non-commercial and commercial use.
+		Copyright 2013 Barrel LLC.
+		
+		http://mixitup.io
+		http://www.barrelny.com
+
+		All changes are also free for non-commercial and commercial use. -- Shauna	
+		-->
+		
+		<script type="text/javascript">
+			
+			// INSTANTIATE MIXITUP
+		
+			$(function(){
+				$('#Grid').mixitup();
+			});
+			
+		</script>
+		
+		<title>Shauna Gordon-McKeon | CV/Portfolio</title>
+
+	</head>
+	<body>
+		<div class="wrapper">
+			
+			<h1><strong>Shauna Gordon-McKeon</strong> CV/Portfolio</h1>
+
+			<div id="topWrap">
+
+				<div id="info">
+
+					<p>Email: shaunagm at gmail dot com<br />Twitter: shauna_gm</p>
+					<!-- FILTER CONTROLS -->
+
+					<div class="controls">	
+						<h3>View</h3>
+						<ul>
+							<li class="filter" data-filter="all">All</li>
+							<li class="filter" data-filter="work">Work History</li>
+							<li class="filter" data-filter="education">Education</li>
+							<li class="filter" data-filter="volunteer">Volunteer History</li>
+							<li class="filter" data-filter="personal">Personal Projects</li>
+							
+						</ul>
+					</div>
+			
+					<div class="controls">	
+						<h3>Type</h3>
+						<ul>
+							<li class="filter" data-filter="writing">Writing</li>
+							<li class="filter" data-filter="programming">Programming</li>
+							<li class="filter" data-filter="organizing">Organizing</li>
+							<li class="filter" data-filter="teaching">Teaching</li>
+							<li class="filter" data-filter="research">Research</li>
+							<li class="filter" data-filter="other_type">Other</li>
+						</ul>
+					</div>
+
+					<div class="controls">	
+						<h3>Topic</h3>
+						<ul>
+							<li class="filter" data-filter="science">Science</li>
+							<li class="filter" data-filter="technology">Technology</li>
+							<li class="filter" data-filter="politics">Politics</li>
+							<li class="filter" data-filter="feminism">Feminism</li>
+							<li class="filter" data-filter="other_topic">Other</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<!-- HIGHLIGHT -->
+
+				<div id="HighlightWrap">
+					<div id="Highlight">
+					</div>
+				</div>
+			
+			</div>
+			
+			<!-- GRID -->
+			
+			<ul id="Grid">
+
+				<li class="mix programming teaching organizing work" onclick=highlight(7)>
+					<div class="figure">
+						<img src="thumbs/openhatch.png" alt="" class="hascaption" />
+						<p class="caption">OpenHatch</p>
+					</div>  
+				</li>
+				<li class="mix writing" onClick=highlight(0)>
+					<div class="figure">
+						<img src="thumbs/personal_blog.png" alt="" class="hascaption" />
+						<p class="caption">Personal Blog</p>
+					</div>  						 
+	 			</li>
+				<li class="mix writing tecnology" onClick=highlight(1)>
+					<div class="figure">
+						<img src="thumbs/openhatch_blog.png" alt="" class="hascaption" />
+						<p class="caption">OpenHatch Blog</p>
+					</div>  
+				</li>
+				<li class="mix writing science volunteer programming" onClick=highlight(2)>
+					<div class="figure">
+						<img src="thumbs/osc_blog.png" alt="" class="hascaption" />
+						<p class="caption">OSC Blog</p>
+					</div>  
+				</li>
+				<li class="mix teaching work" onClick=highlight(8)>
+					<div class="figure">
+						<img src="thumbs/partsandcrafts.jpg" alt="" class="hascaption" />
+						<p class="caption">Parts & Crafts</p>
+					</div> 
+				</li>
+				<li class="mix research education science" onClick=highlight(13)>
+					<div class="figure">
+						<img src="thumbs/livinglinks.jpg" alt="" class="hascaption" />
+						<p class="caption">Living Links Lab</p>
+					</div> 
+				</li>
+				<li class="mix education" onClick=highlight(14)>
+					<div class="figure">
+						<img src="thumbs/hampshire.jpg" alt="" class="hascaption" />
+						<p class="caption">B.A., Hampshire College</p>
+					</div> 
+				</li>
+				<li class="mix education science research writing" onClick=highlight(15)>
+					<div class="figure">
+						<img src="thumbs/div3.jpg" alt="" class="hascaption" />
+						<p class="caption">Div III (Senior Thesis)</p>
+					</div> 
+				</li>
+				<li class="mix writing" onClick=highlight(3)>
+					<div class="figure">
+						<img src="thumbs/fiction.jpg" alt="" class="hascaption" />
+						<p class="caption">Fiction</p>
+					</div> 
+				</li>
+				<li class="mix programming work" onClick=highlight(4)>Web Design & Development</li>
+				<li class="mix programming work" onClick=highlight(5)>MediaLab</li>
+				<li class="mix programming work" onClick=highlight(6)>Laser Lab</li>
+				<li class="mix teaching work" onClick=highlight(9)>Summer Institute for the Gifted</li>
+				<li class="mix organizing politics volunteer" onClick=highlight(10)>OpenGovBoston</li>
+				<li class="mix research programming teaching work science" onClick=highlight(11)>Moral Cognition Lab</li>
+				<li class="mix research programming work science" onClick=highlight(12)>UC Davis Imaging Research Center</li>
+				<li class="mix personal feminism" onClick=highlight(16)>Digitizing WCWeekly</li>	
+				<li class="mix politics volunteer" onClick=highlight(17)>Political Internships</li>
+				<li class="mix organizing teaching volunteer" onClick=highlight(18)>One-time events</li>
+				<li class="mix teaching science" onClick=highlight(19)>TA Cognitive Neuroscience</li>
+				<li class="mix education" onClick=highlight(20)>Non-degree Coursework</li>
+				<li class="mix personal" onClick=highlight(21)>Galaxy Rise</li>
+				<li class="mix personal science" onClick=highlight(22)>MetaScience</li>
+				<li class="mix volunteer" onClick=highlight(23)>Samaritans Hotline</li>
+
+				<li class="gap"></li> <!-- "gap" elements fill in the gaps in justified grid -->
+			</ul>
+			
+		</div>
+		
+		
+	</body>
+</html>
