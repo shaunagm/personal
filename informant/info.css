@@ -1,0 +1,12 @@
+#left {
+	width:500px;
+	background-color:gray;
+	color:white;
+	float:left;
+}
+
+#right {
+	width:500px;
+	background-color:white;
+	float:right;
+}

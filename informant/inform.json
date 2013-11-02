@@ -1,0 +1,40 @@
+{
+   "item": [
+       {
+	"unique ID": 1,
+	"name": "Simpson's Paradox",
+	"object type": "concept",
+	"date_created": "10/31/2013",
+	"date_updated": "11/1/2013",
+	"total_updates": 1,
+	"summary": "To be filled out"
+	"links": [
+		{
+		"name": "Logarithm",
+		"link_type": "related to"
+  		},
+		"name": "Fallacies",
+		"link_type": "one of"
+  		}		
+	]
+	},
+	{
+	"unique ID": 2,
+	"name": "Logarithm",
+	"object type": "concept",
+	"date_created": "10/31/2013",
+	"date_updated": "11/1/2013",
+	"total_updates": 1,
+	"summary": "To be filled out"
+	"links": [
+		{
+		"name": "Logarithm",
+		"link_type": "related to"
+  		},
+		"name": "Fallacies",
+		"link_type": "one of"
+  		}		
+	]
+	}
+]
+}

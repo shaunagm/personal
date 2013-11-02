@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Informant</title>
+        <link rel="stylesheet" type="text/css" href="info.css"/>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script>
+ $(function() {
+
+
+   var people = [];
+
+   $.getJSON('people.json', function(data) {
+       $.each(data.item, function(i, f) {
+          var tblRow = "<div onClick=switchRight(" + f.name + ")>" + f.name + "</div>"
+           $(tblRow).appendTo("#left");
+           
+     });
+
+   });
+
+});
+	</script>
+	<script>
+		function switchRight(name) {
+			Document.getElementById("right").innerHTML=poem[line];
+			   $("#right").append(name);
+		
+	};
+	</script>
+
+<head>
+<body>
+	<div id="left"></div>
+	<div id="right"></div> 
+</body>
+</html>
+
