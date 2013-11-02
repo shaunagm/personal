@@ -39,6 +39,7 @@ h1,h2,h3,h4,h5,h6{
 
 a{
 	text-decoration: none;
+	color:red;
 }
 
 nav li{
@@ -126,7 +127,7 @@ hr{
 	float:right;
 	padding:10px;
 	display:none;
-	font-size: 12px;
+	font-size: 6px;/* 14px */;
 }
 
 #Grid{
@@ -154,7 +155,6 @@ hr{
 	font-size:18px;
 	height:26px;
 	width:230px;
-	padding:10px;
 	color: #fff;
 	text-align:center;
 	opacity:0.9;

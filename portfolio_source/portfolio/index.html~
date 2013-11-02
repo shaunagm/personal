@@ -115,12 +115,6 @@
 						<p class="caption">Open Science Collective</p>
 					</div>  
 				</li>
-				<li class="mix writing personal current" onClick=highlight(0)>
-					<div class="figure">
-						<img src="thumbs/personal_blog.png" alt="" class="hascaption" />
-						<p class="caption">Personal Blog</p>
-					</div>  						 
-	 			</li>
 				<li class="mix teaching work current" onClick=highlight(8)>
 					<div class="figure">
 						<img src="thumbs/partsandcrafts.jpg" alt="" class="hascaption" />
@@ -133,6 +127,12 @@
 						<p class="caption">Fiction</p>
 					</div> 
 				</li>
+				<li class="mix writing personal current" onClick=highlight(0)>
+					<div class="figure">
+						<img src="thumbs/personal_blog.png" alt="" class="hascaption" />
+						<p class="caption">Personal Blog</p>
+					</div>  						 
+	 			</li>
 				<li class="mix organizing politics volunteer current" onClick=highlight(10)>
 					<div class="figure">
 						<img src="thumbs/ogb.jpg" alt="" class="hascaption" />
