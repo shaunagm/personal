@@ -3,6 +3,7 @@
 
 def create_sieve(sieveLength):
 	sieve = [0] * sieveLength			# Creates array of 0 the length of the sieve
+	sieve[1] = 1					# 1 is not prime
 	for x in range(2,sieveLength):			# For each item in the array
 		if (sieve[x] == 0):			# If the item is prime
 			for y in range(x*2,len(sieve),x):	# Go through sieve and label all multiples of the number...
