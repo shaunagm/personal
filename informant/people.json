@@ -1,7 +1,8 @@
 {
    "item": [
        {
-	"name": "Simpson's_paradox",
+	"ID": 1,
+	"named": "Simpson's Paradox",
 	"date_added": "10/31/2013",
 	"summary":"To be added.",
 	"linked_to": [
@@ -11,7 +12,8 @@
 	]
        },
        {
-	"name": "Logarithm",
+	"ID": 2,
+	"named": "Logarithm",
 	"date_added": "10/31/2013",
 	"summary":"To be added.",
 	"linked_to": [

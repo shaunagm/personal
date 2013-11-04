@@ -1,12 +1,31 @@
+body {
+	padding:0px;
+	margin:0px;
+}
+
 #left {
-	width:500px;
-	background-color:gray;
-	color:white;
+	width:180px;
+	height:100%;
+	background-color:#99B2B7;
 	float:left;
 }
 
 #right {
-	width:500px;
-	background-color:white;
-	float:right;
+	height:100%;
+	background-image:url('bg.png');
+	margin-left:180px;
+}
+
+#content {
+	color:#7A6A53;
+	padding-left:100px;
+	padding-top:20px;
+}
+
+#sidebar {
+	width:180px;
+	color:#7A6A53;
+	font-size:16px;
+	font-weight:bold;
+	padding:10px;
 }

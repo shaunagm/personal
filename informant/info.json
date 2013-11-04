@@ -1,15 +1,21 @@
-{ 
-    "item": [
-	{ 
-		"name": "Simpson's_paradox",
-		"date_added": "10/31/2013",
-		"summary":"To be added."
-	}
-	{ 
-		"name": "Logarithm",
-		"date_added": "10/31/2013",
-		"summary":"To be added."
-	}
-    ]
+{
+   "item": [
+       {
+	"name": "Simpson's Paradox",
+	"date_added": "10/31/2013",
+	"summary":"To be added.",
+	"linked_to": [
+		"Logarithm",
+		"T-test",
+		"Feminism"
+	]
+       },
+       {
+	"name": "Logarithm",
+	"date_added": "10/31/2013",
+	"summary":"To be added.",
+	"linked_to": [
+	]
+       }
+   ]
 }
-
