@@ -1,0 +1,390 @@
+/*
+Theme Name: Purple Fields
+Theme URI: 
+Description: A simple theme.
+Version: 1.0
+Author: Shauna Gordon-McKeon
+Author URI: http://www.shaunagm.net
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Credits:
+"39 Smooth" font from http://www.fontparade.com/index.php?page=font&id=425
+tree silhouettes by Bittbox, http://www.bittbox.com/freebies/free-vectors-tree-silhouettes
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body, h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;
+}
+
+blockquote {
+	padding: 10px;
+}
+
+td { padding: 4px 4px 4px 4px; }
+
+html,body {
+	height:100%;
+}
+
+body{
+	margin: 0;
+	font-family: Arial, Helvetica, Georgia, Sans-serif;
+	font-size: 12px;
+	vertical-align: top;
+	background: #ffffff;
+	background: url(images/ibl.jpg);
+	background-repeat:no-repeat;
+	background-position: top left;
+	color: #000000;
+}
+
+a:link, a:visited{
+	text-decoration: none;
+	color: #660066;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+@font-face {  
+  font-family: "39Smooth";  
+  src: url(images/39smooth.oet); /* IE */  
+  src: local("39Smooth"), url(images/39smooth.ttf) format("truetype"); /* non-IE */  
+  /*   */
+} 
+
+p{
+	padding: 10px 0 0 0;
+}
+
+h1{
+	font-family: "39Smooth", Georgia, Sans-serif;
+	font-size: 36px;
+	padding: 0 0 10px 0;
+} 
+
+h1 a:visited {
+	text-decoration: none;
+}
+
+h1 a:link {
+	text-decoration: none;
+}
+
+
+h3 {
+	font-family: "39Smooth", Georgia, Sans-serif;
+	font-size: 20px;
+}
+
+#wrapper{
+	margin: auto;
+	text-align: center;
+	min-height: 100%;
+}
+
+#main{
+	clear:all;
+	min-height: 100%;
+	overflow:auto;
+	float:center;
+	text-align: center;
+	padding-bottom: 150px;
+}
+
+#header{
+	text-align: center;
+	width: 100%;
+	height:200px;
+}
+
+#treewrap {
+ 	height:200px;	
+	float:left;
+	margin:auto;
+	width:66%;
+}
+
+#pushtree {
+	height:150px;
+	float:left;
+}
+
+#centertree {
+	height:150px;
+	float:right;
+	padding-top:48px;
+	text-align:center;
+}
+
+#righttree {
+	float:right;
+	width:34%;
+	height:200px;
+	text-align:right;
+	background: url(images/ibr.jpg);
+	background-repeat:no-repeat;
+	background-position: top right;
+	font-family: "39Smooth", Georgia, Sans-serif;
+	font-size:24px;
+}
+
+#righttree a:visited {
+	text-decoration: none;
+}
+
+#righttree a:link {
+	text-decoration: none;
+}
+
+#firstlink {
+	padding-top:32px;
+	padding-right:154px;
+	font-size:28px;
+}
+
+#secondlink {
+	padding-top:28px;
+	padding-right:150px;
+	font-size:28px;
+}
+
+#righttree li {
+	list-style: none;
+}
+#squishcenter{
+	width:900px;
+	margin:auto;
+}
+
+#container{
+	float: left;
+	text-align: left;
+	width: 635px;
+	padding-right:15px;
+}
+
+.post{
+	padding: 20px 0 10px 0;
+}
+
+.post h2{
+	font-family: "39Smooth", Georgia, Sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.entry{
+	line-height: 18px;
+}
+
+.entry li{
+	margin-top:10px;
+       margin-left:20px;
+}
+
+.entry a:link {
+	text-decoration: none;
+	font-weight:bold;
+}
+
+.entry a:visited {
+	text-decoration: none;
+	font-weight:bold;
+}
+
+.badge {
+	width:500px;
+	height:100px;
+	margin-top:5px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.bimg {
+	width:100px;
+	height:100px;
+	float:left;
+}
+
+.btext {
+	width:350px;
+	height:80px;
+	margin-left:50px;
+	margin-top:20px;
+	float:right;
+}
+
+p.postmetadata{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+	margin: 10px 0 0 0;
+}
+
+.navigation{
+	padding: 10px 0 0 0;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.sidebar{
+	float: left;
+	text-align:right;
+	width: 220px;
+	padding-left:15px;
+	padding-right:15px;
+	display: inline;
+	list-style: none;
+	background: url(images/sep.png);
+	background-repeat:no-repeat;
+	background-position: 0px 80px;
+}
+
+.sidebar ul li {
+	font-family: "39Smooth", Georgia, Sans-serif;
+	font-size:14px;
+	list-style: none;
+	padding-top:20px;
+}
+
+.sidebar ul li ul li {
+	font-family: Arial, Helvetica, Georgia, Sans-serif;
+	font-size:12px;
+	padding-top:5px;
+}
+
+.linkcat2 ul li {
+list-style: none;
+}
+
+.listheaders {
+	padding-top:10px;
+	list-style: none;
+}
+
+.listcontent {
+list-style: none;
+}
+
+#footer {
+	position: relative;
+	margin-top:-150px;
+	height:150px;
+	clear: both;
+	float: left;
+	width: 100%;
+	background: url(images/footer.jpg) bottom left no-repeat;
+}
+
+.push {
+	position: relative;
+	clear: both;
+/*	float: left; */
+/*	width: 100%; */
+	height: 120px; /* .push must be the same height as .footer */
+	padding: 10px 0 0 0;
+}
+
+
+#footer p{
+	line-height: 18px;
+}
+
+
+.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignright {
+	float: right;
+	margin-left: 15px;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 15px;
+}
+
+
+
+.comments-template{
+
+	margin: 10px 0 0;
+
+	border-top: 1px solid #ccc;
+
+	padding: 10px 0 0;
+
+}
+
+
+
+.comments-template ol{
+
+	margin: 0;
+
+	padding: 0 0 15px;
+
+	list-style: none;
+
+}
+
+
+
+.comments-template ol li{
+
+	margin: 10px 0 0;
+
+	line-height: 18px;
+
+	padding: 0 0 10px;
+
+	border-bottom: 1px solid #ccc;
+
+}
+
+
+
+.comments-template h2, .comments-template h3{
+
+	font-family: Georgia, Sans-serif;
+
+	font-size: 16px;
+
+}
+
+
+
+.commentmetadata{
+
+	font-size: 12px;
+
+}
+
+
+
+.comments-template p.nocomments{
+
+	padding: 0;
+
+}
+
+
+
+.comments-template textarea{
+
+	font-family: Arial, Helvetica, Georgia, Sans-serif;
+
+	font-size: 12px;
+
+}
