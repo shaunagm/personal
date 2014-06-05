@@ -1,11 +1,17 @@
-Repo for random files.  Currently includes the following directories:
+This is a repository for miscellaneous personal (but public) files.
 
-"data analysis": containing subdirectories for monthly practice doing data analysis
+It includes the directories:
+
+"minor projects": mostly coding exercises, nothing big or interesting enough to deserve its own repository
 
 "miscellaneous_files": various teaching materials, stories, apps-themes-other-code, primarily referenced from shauangm.net
-
-"music player": a quick attempt at a program for playing my music based on tags
-
-"portfolio_source": source code for shaunagm.net/portfolio
+(Note to self: be careful when moving these files, as doing so will likely break inbound links.)
 
 "project euler": files from solving project euler problems
+
+"data analysis": what it says on the tin
+
+"notes": notes on books, articles, etc in Markdown
+
+
+

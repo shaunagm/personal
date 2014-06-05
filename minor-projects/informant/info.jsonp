@@ -1,0 +1,19 @@
+{
+"items": [
+	{
+        "name": "Simpson's_paradox",
+	"alt_names": [
+		{"name":"Yule-Simpson effect"}
+	],
+	"date_added": "10/31/2013",
+	"summary":"To be added.",
+	}
+	{
+        "name": "Logarithm",
+	"alt_names": [],
+	"date_added": "10/31/2013",
+	"summary":"To be added.",
+	}
+    ]
+}
+

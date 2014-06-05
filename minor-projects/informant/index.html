@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Informant</title>
+        <link rel="stylesheet" type="text/css" href="info.css"/>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script>
+	$(function() {
+		var people = [];
+		$.getJSON('people.json', function(data) {
+			$.each(data.item, function(i, f) {
+        			var inside = "<div onClick=switchRight(\"" + f.ID + "\")>" + f.named + "</div>";
+           			$(inside).appendTo("#sidebar");
+     			});
+   		});
+	});
+	</script>
+	<script>
+	function switchRight(ID) {
+		var people = [];
+		$.getJSON('people.json', function(data) {		/* Feels like I'm unnecessarily duplicating this here ... */
+			$.each(data.item, function(i, f) {
+				if (f.ID == ID) {
+	        			var inside = "<h3>" + f.named + "</h3><p>Added: " + f.date_added + "</p><p>Summary: " + f.summary + "</p>";
+					document.getElementById("content").innerHTML=inside;        	   		
+				}
+				
+     			});
+
+		
+		});
+	};
+	</script>
+
+<head>
+<body>
+	<div id="left"><div id="sidebar"></div></div>
+	<div id="right"><div id="content"></div></div> 
+</body>
+</html>
+
