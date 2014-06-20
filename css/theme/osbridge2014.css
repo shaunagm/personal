@@ -171,6 +171,9 @@ body {
     padding-left: 20px;
 }
 
+.reveal .no-bullet li {
+    list-style-type:none;
+}
 
 
 .reveal .filler {
