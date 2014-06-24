@@ -158,16 +158,19 @@ body {
 .reveal .leftjustify p {
     clear:both;
     text-align:left;
+    padding:10px;
     padding-left:20px;
 }
 
 .reveal .leftjustify ol {
     float: left;
+    padding:10px;
     padding-left: 60px;
 }
 
 .reveal .leftjustify h4 {
     float: left;
+    padding:10px;
     padding-left: 20px;
 }
 
@@ -178,6 +181,16 @@ body {
 
 .reveal .filler {
     height:20px;
+}
+
+.reveal .smalltext p {
+    padding:10px;
+    font-size:18px;
+}
+
+.notes {
+    width:100%;
+    font-size:30px;
 }
 
 
