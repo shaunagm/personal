@@ -56,11 +56,13 @@
 				   
 				    <section class="question" data-background="#E8DDCB"> <!-- SANITY CHECK THIS -->
 				    <h4>So what is WelcomeBot?</h4>
-				    <!-- Notes: WelcomeBot is a Python-based program that connects to an IRC network using Python's socket library. -->
 				    <h4 class="fragment">So what is IRC?</h4>
-                    <!-- Notes: IRC is an "application layer protocol" for sending text messages.-->
                     <h4 class="fragment">So what is an application layer protocol?</h4>
-                    <!-- Notes: It's part of the general internet protocol, which also includes [[ Shauna: maybe reference Silence on the Wire? ]] -->
+                    <aside class="notes">
+-- What is WelcomeBot?  A program written in Python which uses the socket library to connect to IRC servers, join IRC channels, and message IRC users.
+-- What is IRC?  There's actually a few ways to answer that.  One way is to think of IRC as a tool, or platform.  In that way, you can think of IRC as something like AOL Instant Messenger, or AIM.  I like comparing it to AIM because AIM was the first chat client that I ever used.  It's a tool that allows you to talk to people, either in group chats, called channels, or in private messages.  Another way to think of IRC is as a protocol.  In fact, it's what's known as an application layer protocol.
+-- What's an application layer protocol?  So in order to communicate with each other, nodes on a network need to agree on a basic syntax, an abstract structure, so that can establish when they're being talked to, who is talking to them, and neat things like that.  There's different layers of abstraction.  So for instance, there's IP, which is a very low level protocol.  TCP, which is the transport layer protocol - you hear these things being referred to together as TCP/IP.  And then, there's application level.  Another application level protocol is HTTP, which our web browsers use, and SSH, which allows you to create secure encrypted connections.  IRC is at that level of protocol.
+                    </aside>
 				    </section>
 				    
 				    <section class="question" data-background="#E8DDCB">
@@ -78,6 +80,9 @@
     				    <p>We then use this object to connect to the server on port 6667.</p>
     				    <pre>server = "irc.freenode.net" 
 ircsock.connect((server, 6667))</pre>
+                        <aside class="notes">
+                            Note: AF_INET = address family, INET: IPv4, so the server variable, irc.freenode.net, is mapped to ipv4.  Sock_stream is another connection variable which I looked up but didn't really understand.
+                        </aside>
     				   
 				    </section>
 				    
@@ -106,19 +111,41 @@ ircsock.send("NICK "+ botnick +"\n") </pre>
     				    </ul>
 				    </section>
 				    
-				    <section class="meta" data-background="#036564">
+				    <section class="meta ps" data-background="#036564">
 				        <h3>A mistake!</h3>
 				        <h3>aka a learning experience</h3>
 				        <p class="filler"></p>
 				        <p>How do you listen and respond at the same time?</p>
 				        <p class="filler"></p>
-				        <pre class="fragment">import queue, threading</pre>
+				        <pre class="fragment">import queue, threading
+def getIRC():
+    q = Queue.LifoQueue()
+    while True:
+        ircmsg = ircsock.recv(2048) # receive data from the server
+        ircmsg = ircmsg.strip('\n\r') # removing any unnecessary linebreaks.
+        q.put(ircmsg)
+t = Thread(target=getIRC)
+t.daemon = True
+t.start()
+                    </pre>
+                    <aside class="notes">
+                    So, one of the first worries I had when trying to adapt this basic script to fit my needs was that the bot needs to be able to do a few things at once.  It wants to receive IRC messages, but it also wants to be checking how long newcomers have been in the channel and welcoming them and processing them as needed.  My first solution to this used the thread and queue libraries.  
+
+I'm not going to go into a lot of detail here, but just briefly, you can see - this code creates a Last In, First Out queue, so processing things in the order its received.  It's then wrapped in a thread, which means it can sort of hum along on repeat in the background while the bot does other stuff.  So, from my perspective, this was great - the bot could take care of business while not missing a message.
+
+                    </aside>
+                    </section>
+                    
+                    <section class="meta ps" data-background="#036564">
+				        <h3>Totally unnecessary</h3>
 				        <p class="filler"></p>
-				        <p class="fragment">Nope!</p>
-				        <p class="filler"></p>
-				        <pre class="fragment">ready_to_read, b, c = select.select([ircsock],[],[], 1)</pre>
-				          <!-- Notes: Explain the difference, maybe compare the lines of code?-->
-				    </section>
+				        <pre class="fragment">import select
+ready_to_read, b, c = select.select([ircsock],[],[], 1)</pre>
+                    <aside class="notes">
+                    Turns out that's all totally unnecessary.  Operating systems, having been designed by reasonable people, recognize that you might want to do other things instead of waiting constantly by the phone for a call, and so they save a backlog of connections.  Great!  So I got rid of threading and queuing.  Instead, I just needed to know when to access that backlog, that is - when a message had been received.  Unix systems have a tool called select() which the python select library uses, which keeps track of when objects - sockets, but also files -  have been changed.  The select.select() function takes three parameters, which are lists of objects you want to check.  The first is for things you want to read, the second is for things you want to write to, and the third is waiting for exceptional conditions - of course, we just want to read, so we use the first parameter. The last parameter is an optional timeout argument.  Here, we're saying check, wait one second, and move on.  
+
+                    </aside>
+  				    </section>
 				    
 				    <section class="meta" data-background="#036564">
 				        <h3>Learning experience for everyone</h3>
