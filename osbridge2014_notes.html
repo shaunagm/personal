@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Deconstructing Contributions - Open Source Bridge, June 2014</title>
+
+		<meta name="description" content="A talk about deconstructing contributions in free and open source software">
+		<meta name="author" content="Shauna Gordon-McKeon">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/osbridge2014.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			
+			    	<section class="title-page">
+					    <img src="images/osbridge2014/title.png">
+					    <p>Shauna Gordon-McKeon, OpenHatch</p>
+                        <p>Open Source Bridge, June 2014</p>
+                        <aside class="notes">No notes</aside>		
+				    </section>
+				    
+				    <section data-background="images/osbridge2014/shauna_teaching.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg" data-transition="fade" >
+				        <h3>Who am I?</h3>
+					    <aside class="notes">
+					        Speaker: I'm Shauna Gordon-McKeon.  I'm Program Director at OpenHatch, where we try to help people get involved in free and open source software.  I run an event series called Open Source Comes to Campus.
+					    </aside>			
+				    </section>
+			
+					<section>
+					    <section data-background="images/osbridge2014/schoolnames.png">
+					        <img src="images/osbridge2014/schools/1.JPG" class="fragment">
+					    </section>
+					    <section data-background="images/osbridge2014/schoolnames.png">
+					        <img src="images/osbridge2014/schools/4.JPG">
+					    </section>
+					    <section data-background="images/osbridge2014/schoolnames.png">
+					        <img src="images/osbridge2014/schools/5.JPG">
+					    </section>
+					    <section data-background="images/osbridge2014/schoolnames.png">
+					        <img src="images/osbridge2014/schools/2.JPG">
+					    </section>
+					    <section data-background="images/osbridge2014/schoolnames.png">
+					        <img src="images/osbridge2014/schools/6.JPG">
+					    </section>
+				        <section data-background="images/osbridge2014/schoolnames.png">
+					        <img src="images/osbridge2014/schools/3.JPG">
+					    </section>
+					    <section data-background="images/osbridge2014/schoolnames.png">
+					        <img src="images/osbridge2014/schools/7.JPG">
+					    </section>
+					    <section data-background="images/osbridge2014/schoolnames.png">
+					        <img src="images/osbridge2014/schools/8.JPG">
+					    </section>			
+					    <section data-background="images/osbridge2014/schoolnames.png">
+					        <img src="images/osbridge2014/schools/9.JPG">
+					    </section>	
+					    
+					    <aside class="notes">
+					        Speaker: We've run 21 events on college campuses since I joined a year and a half ago, including 9 so far this year.  Most events are structured as a day-long workshop.  In the mornings, we teach people how to use tools like git, IRC, and issue trackers.  Around lunch time, we do a career panel.  And in the afternoons, we do a contributions workshop, where we help students contribute to real free and open source projects.  Can anyone guess what the most challening part is?
+					    </aside>			
+				    </section>
+				    
+				    <section data-background="images/osbridge2014/frustration.png">
+				    
+				        <aside class="notes">
+				            Speaker:  Why is helping people to contribute so challenging?  Why is contributing sometimes so frustrating?  This is one of those complicated questions for which there is no one answer.  There are many steps in the contribution process where people can get tripped up.  This talk is an attempt to break down the contribution process into these individual steps and talk about the individual solutions and resources we can apply.  The talk is for both those who want to contribute and are running into trouble, and those who want contributors but are not sure how or why they're losing them.  Spoiler: One of the key themes that we'll run accross is the importance of making implicit knowledge explicit, and the special role that newcomers play in helping us to do this.
+				        </aside>
+				    
+				    </section>
+				    
+				    <section style="background: rgba(255,255,255,0.8)" class="whitebg leftjustify">
+				        
+				        <h3>This Talk</h3>
+				        <h4>Part 1: What I Know &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+				        <h4>Part 2: What You Know (<strong>an activity</strong>)</h4>				    
+				        
+				        <aside class="notes">
+				            Speaker:  I'm going to spend the first half of the talk going over some of the specific problems that I've seen newcomers encounter in open source, and some of the ways that OpenHatch has come up with to address them.  Then, for the rest of the session, we're going to do an activity that will help us discover new issues and address them.  This activity is a process we can use over and over again to improve our projects and the experience others have in contributing to them.
+				            
+				         </aside>
+				    </section>
+				    
+				    <section data-background="images/osbridge2014/umass.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg" data-transition="fade">
+                        <h3>Contributing</h3>
+						<h4>Common Obstacles</h4>
+						<ol>
+						    <li class="fragment">finding a project</li>
+						    <li class="fragment">understanding the issue/task</li>
+							<li class="fragment">setting up the development environment</li>
+							<li class="fragment">anxiety and self-doubt</li>
+						</ol>
+						<aside class="notes">No notes</aside>
+				    </section>
+				    
+				    <section data-background="images/osbridge2014/choices.jpg">
+				        <aside class="notes">No notes</aside>
+				    </section>
+				    
+				    <section data-background="images/osbridge2014/choices.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg leftjustify" data-transition="fade">
+                        <h3>Obstacle #1: Picking a Project</h3>
+                       
+				        <aside class="notes">
+				        Speaker:  Depending on your definition, there are either thousands or millions of open source projects out there to contribute to.  Either way, that's an overwhelming number of projects to choose from.  Project maintainers may not consider this aspect of a newcomers' experience, because the newcomers they interact with are the ones who have in some way chosen their project.  But it's actually quite a big barrier, to the point that many if not most newcomers are perfectly happy to just be pointed in the direction of a specific project that they've had no part in choosing.  At our events, we largely deal with this by presenting students a pre-selected group of projects: those with community members physically present at our event, and those who meet our standards for preparation, documentation, and community culture, which I'll take about more in just a bit.  But we also try to teach students how to choose projects.  
+				        </aside>
+				        
+				    </section>
+				        
+				    <section data-background="images/osbridge2014/choices.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg leftjustify" data-transition="fade">
+				        <h3>Picking a Project</h3>
+				        <ol>
+						    <li class="fragment">brainstorm</li>
+						    <li class="fragment">research</li>
+						    <li class="fragment"><strong>evaluation</strong></li>
+				            <li class="fragment">contact</li>
+						</ol>
+						
+						<aside class="notes">
+				        Speaker:  We have a finding a project activity that has four steps: brainstorming potential projects, researching them and finding their documentation, repositories, issue trackers, and communications tools, evaluating the project and community for suitability, and making contact with communities they're interested in.
+				        </aside>
+						
+					</section>
+					
+					<section data-background="images/osbridge2014/choices.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg leftjustify" data-transition="fade">
+                        <h3>Evaluating a Project</h3>
+				        <ol>
+						    <li class="fragment">activity</li>
+						    <li class="fragment">responsiveness</li>
+						    <li class="fragment">size</li>
+				            <li class="fragment">culture</li>
+						</ol>
+						<p class="filler"></p>
+						
+						<p class="fragment">Read more about our "Finding a Project" activity at <br /><strong>bit.ly/finding-a-project</strong>.</p>
+						<aside class="notes">
+				        Speaker:  I want to focus in on that third step - evaluation.  We ask our attendees to evaluate projects in a few different ways.  We tell them to look for **activity** - does it look like the community is currently accepting and responding to contributions?  Is it so busy they're worried they won't be able to keep up?  We suggest they look at **responsiveness**.  Do people respond to IRC questions with help?  Do they point out problems in patches and help contributors fix them?  We ask them to look at **size**.  Smaller projects tend to have fewer moving parts to learn about, but worse documentation than large well-established projects.  Bigger projects tend to have more people who can help you, but it's easier to get lost in the crowd.  Finally, we tell students to look at **culture** - to read through IRC logs and mailing lists to see whether they're comfortable in the community.  This is in addition to previous steps where they pick projects to evaluate based on their interests.
+				        
+				        This is the advice we give to newcomers, but it's useful for maintainers to think about this as well.  How would you evaluate your own project?  Is it big or small?  Are your community members responsive to questions or are people generally quite busy?  What interests and values do your community members share? Then, take this information and make it explicit.  Put it on your website and in your documentation.  Newcomers who are looking for a project like yours will respond positively.  And those who are looking for something else can filter themselves out, saving everyone time and effort.
+				        
+				        How do you find out if this is working?  Talk to newcomers.  Ask them why they've chosen your project and see if their expectations line up with what you've been trying to convey.
+				        </aside>						
+					</section>
+				    
+				     <section data-background="images/osbridge2014/issues.png" style="background: rgba(0,0,0,0.9)" class="blackbg">
+				        <h3>Obstacle #2: Understanding issues.</h3>
+				        
+				        <aside class="notes">
+                            Speaker:  Learning how to read an issue in an issue tracker is an important skill, and it's something we teach.  It's hard to teach, though, because most issues in most issue trackers are written for maintainers, not newcomers.  As such, they take a lot of knowledge and familiarity with the project for granted.	It's important to make that knowledge explicit and include it in the issue report before giving it to newcomers.
+    				    </aside>
+				     
+				     </section>
+				     
+				     <section data-background="images/osbridge2014/finder.png">
+				        <aside class="notes">
+                            Speaker:  We didn't used to do this.  We have an aggregator that takes the issue trackers for over 800 projects and combines them into one feed that people can browse through.  Maintainers can label specific issues as bitesize, easy, first contribution, etc.  We used to present these relatively unfiltered to students.  This was, in fact, very demoralizing.  There's nothing like being given something labeled 'small' or 'easy' and not being able to fix it.  
+    				    </aside>
+				     </section>
+				     
+				     <section data-background="images/osbridge2014/issues.png" style="background: rgba(0,0,0,.98)" class="blackbg leftjustify">
+				        <h3>Annotating Issues</h3>
+				        
+				        <ol>
+						    <li class="fragment">Skills needed</li>
+						    <li class="fragment">Tools to use</li>
+						    <li class="fragment">Useful documentation</li>
+				            <li class="fragment">Where to make the change</li>
+				            <li class="fragment">What community members can help/give feedback</li>
+						</ol>
+						
+						<p class="filler"></p>			
+				        <p class="fragment">Read more about preparing tasks at our in-person events handbook: <strong>http://opensource-events.com</strong></p>
+                        <p class="filler"></p>
+				        <p class="fragment">(Coming soon: a task browser!  By GSoC student Elana Hashman.)</p>
+				       
+				        <aside class="notes">
+                            Speaker:  Now we go through and add a lot more information to each issue we find.  For project maintainers, the items above are a good start for any issues you want newcomers to tackle.  For newcomers, the list above represent a set of questions you can ask when you come across an issue that seems interesting but overwhelming.  Rather than approaching a maintainer with "I want to try this issue but I don't know how" you can ask specific questions like, "Which tools should I use?"  "Is there documentation for this issue?" or "Is there someone specific I should talk to?"
+    				    </aside>
+				     
+				     </section>
+				     
+				     <section data-background="images/osbridge2014/purdue.jpg">
+				        <aside class="notes">No notes</aside>
+				     </section>
+				     
+				     <section data-background="images/osbridge2014/purdue.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg leftjustify" data-transition="fade">
+				        <h3>Obstacle #3: Setting up the development environment.</h3>
+				        
+				        <p class="fragment">"lots of downloads, need an approved account to have access… had to create own database on localhost… tears clouding vision"</p>
+				        
+				        <aside class="notes">
+				            Speaker:  Not all contributions involve setting up a development environment, but for those that do, this can be a major hurdle.  This picture here is of a group of students and mentors at Purdue University last fall.  We asked one of the students to write about the obstacles she faced when trying to make the contribution.  This is what she wrote.
+				            This story has a happy ending.  We wrote about the problems our students had faced setting up this project.  In response, the project, Privly, led by contributor Jen Davidson - did a documentation sprint where they fixed over two dozen issues with the documentation and installation process.  
+				            But that was mostly serendipity.  Most people who fail at setting up a development environment fail silently, and projects don't even know how many contributors they're losing.  This is a shame.
+				        </aside>
+				     </section>
+				     
+				      <section data-background="images/osbridge2014/purdue.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg leftjustify" data-transition="none">
+
+				        <p class="fragment">From the In-Person Events Handbook:</p>
+				        <ol class="fragment">
+				            <li>What virtual environments or development kits you need</li>
+						    <li>What dependencies you need</li>
+						    <li>How to download the source</li>
+						    <li>Which version to download</li>
+						    <li>How to build/compile the project </li>
+						    <li>How to test your changes</li>	
+						    <li>How to contribute your changes back to the project</li>					    
+						</ol>
+						<p class="filler"></p>
+						<p class="fragment">Also:</p>
+						<ol class="fragment">
+						    <li>Contact information for community/maintainers</li>
+						    <li>Overview of the project</li>
+						    <li>As much documentation as possible</li>
+						</ol>
+						
+						<aside class="notes">
+				            Speaker: Again, these suggestions represent both information that maintainers should provide and questions that newcomers can ask when the information is not provided.
+				        </aside>
+				     </section>
+				     
+				     <section data-background="images/osbridge2014/sprint.png" style="background: rgba(0,0,0,0.95)" class="blackbg" data-transition="fade">
+				     
+				     <h3>Need help?  Try a setup sprint.</h3>
+				     
+				        <aside class="notes">
+				            Speaker:  Sound like a lot?  We can help.  We do IRC based setup sprints with a mix of newcomers and experienced programmers.  A variety of people on a variety of systems will try set up your project and will report back to you when anything is broken or confusing.
+				        </aside>
+				     </section>
+				     
+				     <section data-background="images/osbridge2014/dog_scared.jpg">
+				        <aside class="notes">No notes</aside>
+				     </section>
+				     
+				     <section data-background="images/osbridge2014/dog_scared.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg" data-transition="fade">
+				        <h3>Obstacle #4:  Anxiety and Self-Doubt</h3> 
+				        <aside class="notes">
+				            Speaker:  In addition to all of the technical obstacles we've outline above, there are a number of psychological barriers newcomers face when getting started in free and open source software.  These insecurities can make people hesitate about dipping their toes in open source.
+				        </aside>
+				     
+				     </section>
+				     
+				     <section data-background="images/osbridge2014/dog_scared.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg no-bullet" data-transition="fade">
+				        <p><ul>
+				            <li class="fragment">I'm a burden on project maintainers if I ask for help.</li>
+				            <li class="fragment">No one has responded to my question because it is stupid.</li> 
+				            <li class="fragment">I'm having trouble contributing because I'm incompetent.</li> 
+				            <li class="fragment">I'm not a coding genius so I have nothing to contribute.</li> 
+				            <li class="fragment">I'm not a coder so I have nothing to contribute.</li> 
+				        </ul><p>
+				     
+				        <aside class="notes">
+				            Speaker:  I can't tell you how many times I've heard a student say "I don't want to be a burden" or "But I'm just a beginner" or "I don't know how to code".  These aren't unreasonable things to be thinking.  There *is* a stereotype of open source as all about programming - and full of hyper-competent, self-taught, rock stars.  These students aren't making this up out of nowhere.  And furthermore, people who are just beginning *do* have certain limitations.  It's important both to validate these feelings as reasonable and to help students move past them and become more comfortable.  For instance, when students say, "I'm having trouble contributing because I'm incompetent." I say, "I totally understand that feeling!  I think that all the time.  But then I see people who've been contributing for a decade longer than me have trouble with a tool like git or installing a project and I think, no, everyone's always learning.  The constant challenges and growth are part of what I love about open source." 
+				        </aside>
+				     </section>
+				     
+				     <section data-background="images/osbridge2014/careerpanel.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg no-bullet" data-transition="fade">
+				        <h3 class="fragment">Career Panel</h3>
+				        <h3 class="fragment">Mentorship Program</h3>
+				        <h3 class="fragment">Merge Stories</h3>
+				        <aside class="notes">
+				            Speaker: In addition to training our mentors to recognize and respond to feelings of insecurity, we try to build this into our curriculum.  For instance, in our career panel, we we ask people to talk about the obstacles they faced when they were getting started, and the insecurities they felt and currently feel. We're also starting up a mentorship program where we'll provide not just technical mentorship but the social support so students feel comfortable talking about and working past these fears.  
+				        </aside>
+				     </section>
+				     
+				     <section data-background="images/osbridge2014/mergestories.png" class="whitebg no-bullet" data-transition="fade">
+				        <aside class="notes">
+				            Speaker:  We've also got a new project which we'll be incorporating into our events where members of the broader open source community can share stories of their successes and failures.  We're looking for a diversity of stories representing all different kinds of contributions.  We hope that this will help newcomers understand what contributing is like and also make clear that when they're frustrated or insecure, they're not alone.
+				        </aside>
+				     </section>
+				     
+				      <section data-background="images/osbridge2014/dog_scared.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg no-bullet" data-transition="fade">
+				      
+				        <h3>What can you do?</h3>
+				      				      
+				        <aside class="notes">
+				            Speaker:  So that's what we're doing.  What can you do?  For project maintainers, I encourage you to be open about your own failures, frustrations and insecurities.  Role model a positive attitude towards failure: talk about what you've learned from it and emphasize that it doesn't reflect on your self worth or your place in the community.  That sounds very abstract, but in practice can be concrete and simple.  When I'm having trouble contributing, I like to talk about those problems in the #openhatch IRC channel where I can get advice and help from newcomers and channel regulars alike.  At events, I'm honest about when something confuses me.  One of my favorite moments from Open Source Comes to Campus was when one of our developers, a professional open source programmer and long time Debian developer was leading our git tutorial and got completely stuck for about five minutes.  It was the best thing that could have happened.  Afterwards, a student was having trouble with git.  She laughed and said, "If the experts still have trouble with git, of course I will the first time I try it!"  It was by far the best attitude I've ever seen a newcomer have to git.  And she was role modeling a great attitude to the other newcomers around her.
+				        </aside>
+				      </section>
+				     
+				     <section data-background="images/osbridge2014/dog_happy.jpg">
+				        <aside class="notes">No notes</aside>
+				     </section>
+
+				     <section>
+				        <h3>Notice a pattern?</h3>
+				        <aside class="notes">
+				            Speaker:  I already spoiled this, but there's a pattern to my advice.  It's important to make implicit knowledge - technical, organizational, social - explicit.  You also may have noticed how important newcomers are to this process.
+				        </aside>
+				     </section>
+				     
+				     <section data-background="images/osbridge2014/superhero.jpg">
+				     
+				        <aside class="notes">
+				            Speaker:  It turns out newcomers have this kind of superpower.  They can make things easier for other newcomers by helping you find and fix problems.  Engaging newcomers in this work is a vital part of growing your community and improving your project.  This is something that most newcomers won't believe, but it's very, very true.  So my strongest advice to you is - find some newcomers and engage with them and make sure they know how valuable they are.
+				            
+				            But maybe you don't have any newcomers to ask for help right now.  Maybe what you have right now is you.  You're in luck, though, because guess what?  You were a newcomer once, too.
+				            
+				        </aside>
+				     </section>
+				     
+				     <section>				     
+				        <h3>The Activity (finally!)</h3>
+				     	<aside class="notes">
+				              Speaker:  Which brings us, finally, to this sessions's activity.  We're going to channel our inner newcomers in an attempt to understand the obstacles people face when they try to contribute to open source projects, and then we're going to brainstorm ways to help newcomers over, under, around and through those obstacles.  We're going to make our implict knowledge explicit.
+				        </aside>				     
+				     </section>
+				     
+				   	<section>				     
+				        <h3>You need:</h3>
+				        <ol><li>a handout</li>
+				        <li>a pencil or pen</li>
+				        <li>a partner</li>
+				        </ol>
+				     	<aside class="notes">
+				              Speaker:   I want you to start by taking one of the handouts I'm passing around.  Then, turn to the person next to you.  They're going to be your partner.  At least one of the people in your pair should have made at least one contribution to open source.  Doesn't matter the kind of contribution.  Ideally, it's the first contribution you made to a particular project, but it doesn't have to be - go with whatever's clearest in your mind.  
+				              If both of you are newcomers, switch around until you're paired with someone who has made a contribution.  I'll give you all a moment to get into pairs.  If you can't find a partner - say, if there's an odd number of people in your row - raise your hands and I'll help you out.
+				              Great, now that you're partnered up, here's the overview of the activity.  It consists of three steps, each of which will take about five minutes.  You'll write down answers to a series of questions.  Then, your partner will ask you the questions out loud.  To each question, you'll either answer, or explain why the question wasn't relevant - but no flat out skipping questions.  If the partner doesn't understand your answer, they should ask you to explain. 
+				        </aside>				     
+				     </section>  
+				     
+				     <section style="background: rgba(255,255,255,0.8)" class="whitebg no-bullet" data-transition="fade">
+				        <h3>Step 1</h3> <h3>Think of a contribution you made</h3>
+				        <ul>
+				            <li><strong>How did you find out about the project?</strong></li>
+				            <li><strong>How did you figure out if your contribution was good/correct/appropriate?</strong></li>
+				            <p class="filler"></p>  
+				            <li>How did you pick a part of it to work on?</li>   
+				            <li>How did you set up the project?</li>   
+				            <li>How did you find the parts of the project you needed to add to or alter?</li>   
+				             
+				        </ul>	
+				            <aside class="notes">
+				                The first set of questions, in bold, are the ones you should definitely get to.  The other questions, not in bold, are if you finish with the first questions before the five minutes are up.  If you don't understand a question, please feel free to ask me for clarification.
+				            </aside>			        
+				     </section>				     
+				     
+				     <section style="background: rgba(255,255,255,0.8)" class="whitebg no-bullet" data-transition="fade">
+				        <h3>Step 2</h3><h3>What did you need to know?</h3>	
+				        <ul>
+				        	<li><strong>What technical knowledge did you need?</strong></li>
+				            <li><strong>What kind of social knowledge did you need?</strong></li>
+				            <p class="filler"></p>
+				            <li>What open source tools did you need to use?  Did you need to use version control, issue trackers, IRC?</li>
+				            <li>What domain knowledge did you need?</li> 
+				        </ul>	
+				            <aside class="notes">
+				                Speaker: back up questions:  
+				                    - What technical knowledge did you need? Did you need to know a language/framework/module?
+                                    - What process knowledge did you need? How did you figure out what to do at each step?
+                                    - What kind of social knowledge did you need? Did you need to learn how to follow up with someone politely but persistently? Did you need to figure out who the maintainer was?
+                                    - What domain knowledge did you need?  For a music project, what did you need to know about music?  For a scientific open source project, what did you need to know about the experimental method or chemistry or statistics? 
+				            </aside>
+				     </section>	
+				     
+				     <section style="background: rgba(255,255,255,0.8)" class="whitebg no-bullet" data-transition="fade">
+				        <h3>Step 3</h3><h3>How did you learn what you needed to know?</h3>
+				        <ul>
+				        	<li><strong>What resources did you use?  Project documentation?  Tutorials?  Stack overflow?</strong></li>
+				            <li><strong>Who did you ask for help?  Friends?  An IRC channel or mailing list?  A professor?</strong></li>
+                            <p class="filler"></p>
+                            <li>What resources did you wish you had?</li>
+				            <li>What was the hardest thing to learn?  What are you most grateful you already knew before starting?</li>
+				        </ul>	
+				        <aside class="notes">No notes</aside>	        
+				     </section>	
+				     
+				     <section style="background: rgba(255,255,255,0.8)" class="whitebg no-bullet" data-transition="fade">
+				        <h3>Sharing time!</h3>
+				        <aside class="notes">
+				            Speaker:  I'd love to hear some volunteers take a moment to talk about the contribution they made, the explicit and implicit knowledge they needed, and the tools they used - or wish they could have used - to get that knowledge.
+				        </aside>		        
+				     </section>	
+				     
+				     <section data-background="images/osbridge2014/mergestories.png" class="whitebg" data-transition="fade">
+				     	 <aside class="notes">
+				                Speaker:  If you enjoyed this activity and found any part of it valuable, I encourage you to take the contribution you just wrote about and submit it to MergeStories.  This is something that newcomers at events can use to get a mental picture of what contributing is actually like, and to see that everyone - experienced people and newcomers alike - struggle with contributing sometimes.
+				        </aside>	
+				        			        
+				     </section>	
+				     
+				     <section style="background: rgba(255,255,255,0.8)" class="whitebg smalltext" data-transition="fade">
+				        <h4>Thanks!</h4>
+				        <p>OpenHatch's work and therefore this presentation would not be possible without our many volunteers and contributors.  I'd especially like to thank Britta Gustafson and Asheesh Laroia.</p>
+				        <h4>References</h4>
+				        <p>Privly Documentation Sprint:<br />https://www.privly.org/content/operation-improve-docs<br /><br />Elana Hashman's Google Summer of Code project: <br />https://hashman.ca/gsoc/</p>
+				        <h4>Images (in order)</h4>
+				        <p>"Frustration" by Sean MacEntee CC BY 2.0 <br />https://www.flickr.com/photos/smemon/5635400338/
+				        <br /><br />
+				        "The New Fred Meyer on Interstate on Lombard" by Lyza CC BY SA 2.0 https://www.flickr.com/photos/lyza/49545547/
+				        <br /><br />
+				        "Carson outdoor pool goes to the dogs" by US Army CC BY 2.0 http://www.flickr.com/photos/36196762@N04/4989283309
+				        <br /><br />
+				        "Carson outdoor pool goes to the dogs" by US Army CC BY 2.0 http://www.flickr.com/photos/familymwr/4989889796
+				        <br /><br />
+				        "Con capa sobre La riñonera" by MaloMalverde CC BY SA 2.0 https://www.flickr.com/photos/malomalverde/8598030211
+				        </p>	
+				        <aside class="notes">No notes</aside>			        
+				     </section>	
+				     
+			</div>
+
+        </div>
+
+<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
+    </body>
+
+</html>
