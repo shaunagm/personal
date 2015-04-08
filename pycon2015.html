@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Open Source for Newcomers and the People Who Want to Welcome Them</title>
+
+	<meta name="description" content="">
+	<meta name="author" content="Shauna Gordon-McKeon">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/pycon2015.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides" style="width:1350px; height:700px;">
+
+			<section class="title-page meta" data-background="#25aae1">
+				<h2>Open Source for Newcomers<br />
+				<h3>(& the People Who Want to Welcome Them)</h3>
+				<p class="filler"></p>
+				<h4>PyCon 2015</h4>
+				<p class="filler"></p>
+				<h5>Shauna Gordon-McKeon</h5>
+				<p class="filler"></p>
+				<h5>These slides: <a href="">bit.ly/link</a></h5>
+			</section>
+
+			<section class="intro" data-background="#f58233">
+				<h3>OpenHatch</h3>
+				<h6>Fifty+ campus events</h6>
+				<div id="image-deck">
+				<img style="width: 350px;" src="images/libreplanet2015/hartnell.jpg">
+				<img style="width: 350px;" src="images/libreplanet2015/stonybrook.jpg">
+				<img style="width: 350px;" src="images/libreplanet2015/purdue.JPG">
+				<img style="width: 350px;" src="images/libreplanet2015/iub.jpg">
+				<img style="width: 350px;" src="images/libreplanet2015/columbia.jpg">
+				<img style="width: 350px;" src="images/libreplanet2015/morris.jpg">
+			</div>
+			</section>
+
+			<section class="intro" data-background="#f58233">
+				<h3>Lots of volunteers</h3>
+				<h3>Lots of enthusiasm</h3>
+				<h3>Lots of obstacles</h3>
+			</section>
+
+			<section class="intro" data-transition="none" data-background="#f58233">
+				<h4>This talk is for newcomers <i>and</i> oldtimers.</h4>
+				<h4>It has five parts.</h4>
+				<img src="images/pycon2015/stars.png">
+			</section>
+
+			<section class="picking-projects" data-background="images/osbridge2014/choices.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg leftjustify" data-transition="fade">
+				<h3 style="color: #e30881;">Picking a Project</h3>
+			</section>
+
+			<section class="picking-projects" data-background="#e30881">
+			<h3>Picking a Project</h3>
+			<p class="filler" />
+			<h4>Step 1: Know Thyself</h4>
+			</section>
+
+			<section class="picking-projects" data-background="#e30881">
+				<h3>Newcomers</h3>
+				<ul class="left-justified">
+					<li>Why do you want to contribute to open source projects?</li>
+					<li>What kind of tasks do you know you enjoy?</li>
+					<li>What skills do you already have?  Which do you want to learn?</li>
+					<li>What kind of commitment can you make?</li>
+					<li>What kind of communities sound appealing to you?</li>
+				</ul>
+			</section>
+
+			<section data-background="images/bpug2015/questionsandanswers.png">
+			</section>
+
+			<section class="picking-projects" data-background="images/bpug2015/questionsandanswers.png" style="background: rgba(255,255,255,0.8)" class="whitebg leftjustify" data-transition="fade">
+				<h4 style="color: #e30881;">Use your answers to guide your search</h4>
+			</section>
+
+			<section class="picking-projects" data-transition="none" data-background="#e30881">
+				<h3>Share your knowledge</h3>
+				<p>"I'm pretty new to Django (just went through the tutorial) and am looking for a Django
+					project to contribute to.  I want to see how it works in the real world!"</p>
+				<p>"It's spring break for me now, so I can do a lot this week, but after that I'll only
+					be available for an hour or two a week until summer."</p>
+				<p>"I'm a visual learner. Is there any documentation I could add illustrations to?"</p>
+			</section>
+
+			<section class="picking-projects" data-transition="none" data-background="#e30881">
+				<h3>Maintainers</h3>
+				<ul class="left-justified">
+					<li>What kind of community do you want to build? Big and bustling? Tight-knit?<br /> Rough and tumble? Diverse?</li>
+					<li>How much time and energy can you give to mentoring and community building?</li>
+					<li>What are your weaknesses and strengths as a mentor?</li>
+					<li>What are your weaknesses and strengths as a community?</li>
+				</ul>
+			</section>
+
+			<section class="picking-projects" data-background="#e30881">
+				<h3>Share your knowledge</h3>
+				<ul class="left-justified">
+					<li>Conversations with newcomers.</li>
+					<li>Documentation.</li>
+					<li>Publicity.</li>
+				</ul>
+			</section>
+
+			<section class="picking-projects" data-background="#e30881">
+				<h4>An example from
+				<a href="https://github.com/edx/edx-platform/blob/master/CONTRIBUTING.rst#expectations-we-have-of-you" target="_blank">
+				Open edX</a></h4>
+				<img src="images/pycon2015/edx.png">
+			</section>
+
+			<section class="picking-projects" data-background="#e30881">
+				<h3>It's okay to have preferences.</h3>
+				<h5>(It doesn't make you picky or ungrateful.)</h5>
+
+				<!-- Share anecdotes.
+				"I've seen this on both sides of the equation.  I talked to someone who was launching
+				a new civic technology project recently, and she wanted help from others.  She was getting lots of offers to help with the
+				code, but what she really needed was someone with user experience design - and until there was a design,
+				there was no need for code.  I told her that it was okay to say that she was only looking for design contributions
+				right now. She said it was a huge weight off her shoulders - she was afraid she was being unwelcoming by
+				turning people away."
+
+				"I've also seen many newcomers show up at projects and say that they're willing to do anything.  They want to
+				help where there's need, which is admirable.  But what is 'anything'?  Everyone has interests, limitations,
+				pre-existing skills.  Talking about them helps a project find the right task for you - or lets them point
+				you to another project that's a better fit."
+
+				"Stating preferences isn't about bending a project or newcomer to meet your needs.  It's about learning the
+				language to help you and others make the right connections."
+				-->
+
+			</section>
+
+			<section class="picking-projects" data-background="#e30881">
+				<h3>Picking a Project</h3>
+				<p class="filler" />
+				<h4>Step 1: Know Thyself</h4>
+				<h4>Step 2: Evaluating Projects</h4>
+			</section>
+
+
+			<section class="picking-projects" data-background="#e30881">
+				<h4>Activity</h4>
+				<h4>Responsiveness</h4>
+				<h4>Culture</h4>
+				<p class="filler"></p>
+				<h5>Newcomers: look for these.</h5>
+				<h5>Maintainers: keep track of these.</h5>
+			</section>
+
+			<section class="picking-projects" data-background="#e30881">
+				<h3>Activity</h3>
+				How often do issues get reported?<br />
+				When was the last commit get merged? <br />
+				How busy is the IRC channel and mailing list?<br />
+			</section>
+
+			<section class="picking-projects" data-background="#e30881">
+				<h3>Very Active: Django</h3>
+				<ul class="left-justified">
+					<li><a target="_blank" href="https://github.com/django/django/commits/master">as many as a dozen commits a day</a></li>
+					<li><a target="_blank"  href="https://github.com/django/django/pulls">dozens of open pull requests</a></li>
+					<li><a target="_blank"  href="https://code.djangoproject.com/query">over a thousand open tickets</a></li>
+					<li>500+ people on the IRC channel</li>
+				</ul>
+				<img src="images/pycon2015/django.png">
+				</section>
+
+				<section class="picking-projects" data-background="#e30881">
+					<h3>Modestly Active: Django-braces</h3>
+					<ul class="left-justified">
+					<li><a target="_blank"  href="https://github.com/brack3t/django-braces/commits/master">a couple commits a month</a></li>
+					<li><a target="_blank"  href="https://github.com/brack3t/django-braces/pulls">half dozen open pull requests</a></li>
+					<li><a target="_blank"  href="https://github.com/brack3t/django-braces/issues?q=is%3Aopen+is%3Aissue">a dozen open tickets</a></li>
+					<li>no IRC channel</li>
+				</ul><br />
+					<img src="images/pycon2015/django-braces.png">
+				</section>
+
+				<section class="picking-projects" data-background="#e30881">
+					<h3>Inactive: Django-tagging</h3>
+					<ul class="left-justified">
+					<li><a target="_blank"  href="https://github.com/brosner/django-tagging/commits/master">last commit five years ago</a></li>
+					<li><a target="_blank"  href="https://github.com/brosner/django-tagging">exploring the repo shows the project is not maintained, new ownership</a></li>
+				</ul><br />
+				<img src="images/pycon2015/django-tagging.png">
+				</section>
+
+				<section class="picking-projects" data-background="#e30881">
+<h5>Rules of thumb:</h5>
+					<li>One or more commits in last two months.</li>
+					<li>One or more replies to pull requests/issues in last two months.</li>
+					<li>No harm in asking if a project is still active.</li>
+					<li>More activity is not always better! Find the level that works for you.</li>
+			</section>
+
+			<section class="picking-projects" data-background="#e30881">
+				<h3>Responsiveness</h3>
+				Do community members respond to bug reports?<br />
+				Do maintainers give feedback on pull requests when they need changes, or just let them
+				sit there? <br />
+				When someone asks for help on IRC, do people respond?
+			</section>
+
+			<section class="picking-projects" data-background="#e30881">
+				<h4>An example from
+					<a href="https://github.com/scipy/scipy/pulls?q=is%3Apr+is%3Aclosed" target="_blank">SciPy</a></h4>
+						<img src="images/pycon2015/scipy.png">
+						<!-- Anecdote about my own contribution to SciPy. -->
+						<!-- Point out # of comments, and purple (merged) of pull requests. -->
+					</section>
+
+			<section class="picking-projects" data-background="#e30881">
+				<h3>Culture</h3>
+				How are users with questions treated? <br />
+				How are other newcomers treated? <br />
+				Does the community have a Code of Conduct?
+			</section>
+
+			<section class="picking-projects" data-background="#e30881">
+				<h4>An example from
+					<a href="https://github.com/scipy/scipy/pulls?q=is%3Apr+is%3Aclosed" target="_blank">Khmer</a></h4>
+					<img src="images/pycon2015/khmer.png">
+					<!-- Note the information on how to report. -->
+				</section>
+
+				<section class="picking-projects" data-background="#e30881">
+					<h4>Another example from <a href="http://openhatch.org/">OpenHatch</a> (aka us)</h4>
+						<img src="images/pycon2015/openhatch_irc.png">
+						<!-- Note that we've got a bot that welcomes newcomers.
+						Also note the link, which is meta:
+						-->
+					<h4>And the <a href="https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=690b0543a813b0ecfc51b0374c0ce6c8275435f0">Linux kernel</a>!</h4>
+					<img src="images/pycon2015/linuxkernel.png">
+					<!-- Point out that the author is 4 years old.  Also remark that this is an interesting examples, because
+					of Linux kernel's reputation. This just goes to show that community culture can be complex and take a
+					while to understand.-->
+					</section>
+
+					<section class="picking-projects" data-background="images/pycon2015/start.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg leftjustify" data-transition="fade">
+						<h3 style="color:#24a7dd;">Good First Tasks</h3>
+					</section>
+
+			<section class="first-tasks" data-background="#24a7dd">
+				<h3>Good First Tasks</h3>
+				<p class="filler"></p>
+				<h5>Option 1: Mentored Tasks</h5>
+			</section>
+
+			<section class="first-tasks" data-background="#24a7dd">
+				<h3>Mentored Tasks</h3>
+				<img src="images/bpug2015/mentoring.jpg">
+				<p>Tag/look for issues labelled "mentored".</p>
+			</section>
+
+			<section class="first-tasks" data-background="#24a7dd">
+				<h3>Pairing</h3>
+				<ul class="left-justified">
+				<li>Can be done in person (at meetups, sprints, etc) or remotely (with screensharing).</li>
+				<li>Can be a mentoring pair (experienced person + newcomer) or a peer pair.</li>
+				<li>Is pretty much the best:</li>
+				</ul>
+				<img src="images/pycon2015/twitter.png">
+				<p class="filler" />
+				<h4>But you don't have to pair.</h4>
+				<p>You can also help asynchronously via email, IRC, and comments on the issue tracker.
+					Just having a specific person to ask questions of is very helpful.</p>
+
+				<!-- Anecdote time: I can't speak highly enough of pairing. I've met people who worry they're
+			 taking up time when they pair, but I've been on both sides of this, and I can promise you: there
+			 are people out there who really genuinely enjoy pairing. I love it. And I learn a lot from it too.
+			 A few months ago I met someone at a PyLadies meetup who wanted to build a script in Python that
+			 called the Twitter API, and I offered to help her. We set up a remote screensharing session which was
+			 a lot of fun.  And I ended up learning how to parse command line options with argparse!   -->
+
+			</section>
+
+			<section class="first-tasks" data-background="#24a7dd">
+				<h3>Good First Tasks</h3>
+				<p class="filler"></p>
+				<h5>Option 1: Mentored Tasks</h5>
+				<h5>Option 2: Newcomer Tasks</h5>
+			</section>
+
+			<section class="first-tasks" data-background="#24a7dd">
+				<h3>Newcomer Tasks</h3>
+				<img src="images/osbridge2014/superhero.jpg" width="500px;">
+				<p>Newcomers are the perfect people to help you:</p>
+				<p>Improve your setup instructions</p>
+				<p>Do user experience testing</p>
+			</section>
+
+			<section class="first-tasks" data-background="#24a7dd">
+				<h3>Setup Sprints</h3>
+				<h5>for setup instructions</h5>
+				<ul class="left-justified">
+					<li>Two or more people, at least one newcomers and one maintainer.</li>
+					<li>Newcomer goes through setup guide in real time.</li>
+					<li>Unearths confusing language, missing steps, unknown dependencies.</li>
+					<li>The newer and less experienced the newcomer, the more gaps they'll find!</li>
+				</ul>
+			</section>
+
+			<section class="first-tasks" data-background="#24a7dd">
+				<h3>Think Alouds</h3>
+				<h5>for user testing</h5>
+				<ul class="left-justified">
+					<li>(Need to use videochat or be in person for this one!)</li>
+					<li>Maintainer gives the newcomer a goal or task.</li>
+					<li>Newcomer speaks their thoughts as they try to accomplish the task.</li>
+					<li>Maintainer can prompt them with, "What are you thinking?" and clarifying questions.</li>
+				</ul>
+			</section>
+
+			<section class="first-tasks" data-background="#24a7dd">
+				<h3>Other newcomer-friendly types of tasks</h3>
+				<ul class="left-justified">
+				<li>Making project websites more accessible to screen-readers</li>
+				<li>Reproducing bugs in the issue tracker</li>
+			</ul>
+			<p class="filler"></p>
+				<p>Maintainers: list these tasks in your contributing guides!</p>
+				<p>Newcomers: ask if they need doing, even if they aren't listed!</p>
+			</section>
+
+			<section class="first-tasks" data-background="#24a7dd">
+				<h3>Good First Tasks</h3>
+				<p class="filler"></p>
+				<h5>Option 1: Mentored Tasks</h5>
+				<h5>Option 2: Newcomer Tasks</h5>
+				<h5>Option 3: Bitesize Tasks</h5>
+			</section>
+
+			<section class="first-tasks" data-background="#24a7dd">
+				<h3>Bitesize Tasks</h3>
+				<img src="images/bpug2015/bitesize.png">
+			</section>
+
+			<section class="first-tasks" data-background="#24a7dd">
+				<h3>What Does The Task Say?</h3>
+				<ul class="left-justified">
+					<li>skills needed and tools needed</li>
+					<li>links to relevant documentation</li>
+					<li>where to make the change (or how to figure out where to make the change)</li>
+					<li>what community members can help/give feedback</li>
+				</ul>
+				<p class="filler"></p>
+				<p>Maintainers: provide this information!</p>
+				<p>Newcomers: if you're stuck, try asking about this info!</p>
+			</section>
+
+			<section class="first-tasks" data-background="#24a7dd">
+				<h3>Example: OpenHatch</h3>
+				<a href="https://github.com/openhatch/oh-mainline/issues/1447" target="_blank"><img src="images/bpug2015/firstask.png"></a>
+				<!-- Maybe replace with newcomer requesting info?-->
+			</section>
+
+			<section class="setup" data-background="images/osbridge2014/purdue.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg leftjustify" data-transition="fade">
+				<h3 style="color:#f58233;">Setting Up Development Environments</h3>
+			</section>
+
+			<section data-background="images/osbridge2014/purdue.jpg" style="background: rgba(255,255,255,0.8)" class="meta" data-transition="fade">
+			<p style="color:#f58233;">"lots of downloads, need an approved account to have access…
+			had to create own database on localhost… tears clouding vision"</p>
+		 </section>
+
+			<section class="setup" data-background="#f58233">
+				<h3>A happy ending, thanks to <a href="https://priv.ly/">Privly</a>:</h3>
+				<img src="images/pycon2015/privly.png">
+			</section>
+
+			<section class="setup" data-background="#f58233">
+				<h3>Information for your setup guide</h3>
+				<p>(Remember, newcomers can help create these guides with setup sprints!)</p>
+
+				<ol class="left-justify">
+					<li>What virtual environments or development kits you need</li>
+					<li>What dependencies you need</li>
+					<li>How to download the source</li>
+					<li>Which version to download</li>
+					<li>How to build/compile the project </li>
+					<li>How to test your changes</li>
+					<li>How to contribute your changes back to the project</li>
+					<li>Contact information for community/maintainers</li>
+					<li>Overview of the project</li>
+					<li>As much documentation as possible</li>
+				</ol>
+			</section>
+
+			<section class="setup" data-background="#f58233">
+				<h4>An example from	<a target="_blank" href="http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/install.html">Pyramid</a></h4>
+				<img src="images/pycon2015/pyramid.png">
+			</section>
+
+			<section class="setup" data-background="#f58233">
+				<h4>Another example from	<a target="_blank" href="http://pandas.pydata.org/developers.html">Pandas</a></h4>
+				<img src="images/pycon2015/pandas.png">
+			</section>
+
+			<section class="time" data-background="images/pycon2015/clocks.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg leftjustify" data-transition="fade">
+				<h3 style="color:#ed1568;">Finding Time</h3>
+			</section>
+
+			<section class="time" data-transition="none" data-background="#ed1568">
+			<h4>Get support</h4>
+			<p>Students, ask professors about getting credit for open source work.</p>
+			<p>Apply for <a href="https://openhatch.org/wiki/Opportunities">paid internships, fellowships, grants and more</a>.</p>
+			</section>
+
+			<section class="time" data-transition="none" data-background="#ed1568">
+				<h4>Figure out what works for you</h4>
+				<p>Want to contribute here and there? Find a project with short, discrete tasks and/or low activity.</p>
+				<p>Want to contribute in short bursts? Attend project nights, hackathons, and sprints.</p>
+				<p>Have a few months free? Find a project that has internships.</p>
+				</section>
+
+			<section class="time" data-transition="none" data-background="#ed1568">
+				<h4>Be explicit about your limitations</h4>
+				<p>"If I haven't commented on your pull request by the weekend, poke me!"</p>
+				<p>"I'm super busy this week, but I'll work more on this issue next week."</p>
+			</section>
+
+			<section class="time" data-transition="none" data-background="#ed1568">
+				<h4>Maintainers, multiply your efforts</h4>
+				<p>Help newcomers help other newcomers.</p>
+			</section>
+
+			<section class="impostor" data-background="images/pycon2015/impostor2.jpg" style="background: rgba(255,255,255,0.8)" class="whitebg leftjustify" data-transition="fade">
+				<h3 style="color:#24a7dd;">Impostor Syndrome</h3>
+			</section>
+
+			<section class="impostor" data-background="#24a7dd">
+				<h3>Impostor Syndrome</h3>
+				<p>aka feeling like a fraud, like you're not good enough</p>
+				<p>See Julia Pagano's <a href="http://pyvideo.org/video/2659/its-dangerous-to-go-alone-battling-the-invisibl">excellent talk</a> from last year's PyCon</p>
+			</section>
+
+			<section class="impostor" data-background="#24a7dd">
+				<h3>Maintainers</h3>
+				<p>You don't have to know everything:</p>
+				<ul>
+				<li>show that you're still learning</li>
+				<li>show how you're still learning</li>
+				<li>embrace your mistakes</li>
+			</ul>
+			<p class="filler"></p>
+				<p>Check out the <a href="https://www.hackerschool.com/manual#sub-sec-social-rules">Hacker School Social Rules</a>:</p>
+				<ul>
+				<li>No feigning surprise</li>
+				<li>No well-actually's</li>
+				<li>No back-seat driving</li>
+				<li>No subtle -isms</li>
+			</ul>
+			</section>
+
+			<section class="impostor" data-background="#24a7dd">
+				<h3>Newcomers</h3>
+				<p>Know you're not alone!</p>
+				<p>Focus on values:</p>
+				<li>Ada Initiative's <a href="https://adainitiative.org/what-we-do/impostor-syndrome-training/">impostor syndrome training</a></li>
+				<li><a href="https://github.com/nickdesaulniers/What-Open-Source-Means-To-Me/blob/master/README.md">What Open Source Means to Me</a></li>
+				</section>
+
+
+			<section class="conclusion" data-background="#f58233">
+				<h3>Takeaways</h3>
+				<ul>
+				<li>Make the implicit explicit.</li>
+				<li>Not every match is a good one, and that's okay!</li>
+				<li>We are all always learning.</li>
+				</ul>
+			</section>
+
+			<section class="conclusion" data-background="#f58233">
+				<h4>Thanks</h4>
+				<p><a href="https://openhatch.readthedocs.org/en/latest/community/contact.html">The OpenHatch community</a>,
+					especially Carol Willing, Asheesh Laroia and Jessica McKellar</p>
+				<p><a href="http://www.meetup.com/bostonpython/">Boston Python User Group</a>, especially Ned Batchelder</p>
+
+		<!--		<p>Example projects: <a href=""></a>, <a href=""></a>, <a href=""></a>, <a href=""></a>,
+				<a href=""></a>, <a href=""></a>, <a href=""></a>, <a href=""></a>, <a href=""></a>.</p> -->
+		<p class="filler"></p>
+				<h5>Follow up</h5>
+				<p><a href="https://events.openhatch.org/events/5">Newcomer Workshop</a> this Sunday!</p>
+				<p>OpenHatch: <a href="http://openhatch.org/">Main website</a>, <a href="http://campus.openhatch.org/">Open Source Comes to Campus</a>, @openhatch, <a href="https://openhatch.readthedocs.org/en/latest/community/contact.html">#openhatch on Freenode</a></p>
+				<p>Me: shaunagm@gmail.com, @shauna_gm</p>
+			</section>
+
+			<section class="conclusion" data-background="#f58233">
+				<h5>Images (in order)</h5>
+				"The New Fred Meyer on Interstate on Lombard" by Lyza CC BY SA 2.0<br /> <a href="https://www.flickr.com/photos/lyza/49545547/">https://www.flickr.com/photos/lyza/49545547/</a>
+				<br />
+				"Start" by Steven Depolo CC BY 2.0<br />
+				<a href="https://www.flickr.com/photos/stevendepolo/5749192025">https://www.flickr.com/photos/stevendepolo/5749192025</a>
+				<br />
+				"Con capa sobre La riñonera" by MaloMalverde CC BY SA 2.0 <br /><a href="https://www.flickr.com/photos/malomalverde/8598030211">https://www.flickr.com/photos/malomalverde/8598030211</a>
+				<br />
+				"All Together Now" by Pete CC BY 2.0<br />
+				<a href="https://www.flickr.com/photos/comedynose/7197462676">https://www.flickr.com/photos/comedynose/7197462676</a>
+				<br />
+				"Impostor" by Crystal CC BY 2.0<br />
+				<a href="https://www.flickr.com/photos/crystalflickr/84838383">https://www.flickr.com/photos/crystalflickr/84838383</a>
+
+			</p>
+
+		</section>
+
+
+
+							</div>
+
+						</div>
+
+						<script src="lib/js/head.min.js"></script>
+						<script src="js/reveal.min.js"></script>
+
+						<script>
+
+							// Full list of configuration options available here:
+							// https://github.com/hakimel/reveal.js#configuration
+							Reveal.initialize({
+								controls: true,
+								progress: true,
+								history: true,
+								center: true,
+								margin: 0.05,
+								width: 1300,
+								height:650,
+
+								theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+								transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+								// Parallax scrolling
+								// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+								// parallaxBackgroundSize: '2100px 900px',
+
+								// Optional libraries used to extend on reveal.js
+								dependencies: [
+								{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+								{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+								{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+								{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+								{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+								{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+								]
+							});
+
+						</script>
+
+					</body>
+					</html>
+
+				</body>
+
+				</html>
