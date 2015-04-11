@@ -164,7 +164,7 @@ text-align: left;
     background-color: #25aae1;
 }
 
-.reveal .meta a {
+.reveal .meta a, .reveal .intro a {
     color: #f3ea22;
 }
 
@@ -182,9 +182,13 @@ text-align: left;
     color: #B2EAFB;
 }
 
-.reveal .first-tasks {
+.reveal .first-tasks, .reveal .impostor {
     color: white;
     background-color: #24a7dd;
+}
+
+.reveal .impostor a, .reveal .first-tasks a {
+ color: #f3ea22;
 }
 
 .reveal .setup, .reveal .conclusion {
@@ -209,10 +213,6 @@ text-align: left;
 .reveal .impostor {
  color: white;
  background-color: #24a7dd;
-}
-
-.reveal .impostor a {
- color: #f3ea22;
 }
 
 .reveal .question {
