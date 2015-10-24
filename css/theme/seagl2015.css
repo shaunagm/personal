@@ -1,0 +1,285 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+/**
+* Black theme for reveal.js.
+*
+* Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+*
+* Modified by Shauna Gordon-McKeon
+* Palette by GlueStudio http://www.colourlovers.com/palette/292482/Terra
+*/
+/*********************************************
+* GLOBAL STYLES
+*********************************************/
+body {
+background: #074558;
+background-color: #074558;
+}
+
+.reveal {
+font-family: "Open Sans", sans-serif;
+font-size: 30px;
+font-weight: normal;
+letter-spacing: -0.02em;
+color: white; }
+
+::selection {
+color: white;
+background: #e7ad52;
+text-shadow: none; }
+
+/*********************************************
+* HEADERS
+*********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+margin: 0 0 20px 0;
+font-family: "Montserrat", Impact, sans-serif;
+line-height: 0.9em;
+letter-spacing: -0.03em;
+text-transform: none;
+text-shadow: none; }
+
+/*********************************************
+* LINKS
+*********************************************/
+.reveal a:not(.image) {
+color: #9F637A;
+text-decoration: none;
+-webkit-transition: color .15s ease;
+-moz-transition: color .15s ease;
+-ms-transition: color .15s ease;
+-o-transition: color .15s ease;
+transition: color .15s ease; }
+
+.reveal a:not(.image):hover {
+color: #f3d7ac;
+text-shadow: none;
+border: none; }
+
+.reveal .roll span:after {
+color: #fff;
+background: #d08a1d; }
+
+/*********************************************
+* IMAGES
+*********************************************/
+.reveal section img {
+margin: 15px 0px;
+}
+
+.reveal a:hover img {}
+
+/*********************************************
+* NAVIGATION CONTROLS
+*********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+border-right-color: #e7ad52; }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+border-left-color: #e7ad52; }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+border-bottom-color: #e7ad52; }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+border-top-color: #e7ad52; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+border-right-color: #f3d7ac; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+border-left-color: #f3d7ac; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+border-bottom-color: #f3d7ac; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+border-top-color: #f3d7ac; }
+
+/*********************************************
+* PROGRESS BAR
+*********************************************/
+.reveal .progress {
+background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+background: #e7ad52;
+-webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+-moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+-ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+-o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/*********************************************
+* SLIDE NUMBER
+*********************************************/
+.reveal .slide-number {
+color: #e7ad52; }
+
+/*********************************************
+* CUSTOM SLIDE STYLING
+*********************************************/
+
+.reveal h2 {
+font-size: 80px;
+}
+
+.reveal h3 {
+font-size: 60px;
+}
+
+.reveal h4 {
+font-size: 50px;
+}
+
+.reveal h5 {
+font-size: 40px;
+}
+
+.reveal .meta li {
+padding:10px;
+}
+
+.reveal .left-justify {
+float: left;
+padding: 10px;
+padding-left: 20px;
+clear:both;
+text-align: left;
+}
+
+/* Palette from PyCon 2015 website */
+
+.reveal .meta {
+    color: #de9e1c;
+    background-color: #074558;
+}
+
+.reveal .meta a, .reveal .intro a {
+    color: white;
+}
+
+.reveal .intro {
+    color: white;
+    background-color: #f58233;
+}
+
+.reveal .picking-projects {
+    color: white;
+    background-color: #e30881;
+}
+
+.reveal .picking-projects a {
+    color: #B2EAFB;
+}
+
+.reveal .first-tasks, .reveal .impostor {
+    color: white;
+    background-color: #24a7dd;
+}
+
+.reveal .impostor a, .reveal .first-tasks a {
+ color: #f3ea22;
+}
+
+.reveal .setup, .reveal .conclusion {
+    color: white;
+    background-color: #f58233;
+}
+
+.reveal .setup a, .reveal .conclusion a {
+ color: #B2EAFB;
+ font-weight: bold;
+}
+
+.reveal .time {
+    color: white;
+    background-color: #ed1568;
+}
+
+.reveal .time a {
+ color: #B2EAFB;
+}
+
+.reveal .impostor {
+ color: white;
+ background-color: #24a7dd;
+}
+
+.reveal .question {
+color: #55443D;
+background-color: #f8bfbf;
+}
+
+.reveal .question a {
+color: #036564;
+}
+
+.reveal .third {
+ color: #55443D;
+	background-color: #F1EDD0;
+}
+
+.reveal .fourth {
+	color: #F1EDD0;
+	background-color: #61a785;
+}
+
+.reveal .q-color {
+color: #036564;
+}
+
+
+.reveal .no-bullet li {
+list-style-type:none;
+}
+
+
+.reveal .filler {
+height:20px;
+}
+
+.reveal pre {
+color: #033649;
+background-color: #E8DDCB;
+font-size:30px;
+padding:5px;
+}
+
+.reveal .question pre {
+background-color:white;
+}
+
+.reveal .smalltext p {
+padding:10px;
+font-size:18px;
+}
+
+.reveal iframe {
+width:1100px;
+height:500px;
+background-color:white;
+}
+
+.reveal .ps pre {
+font-size:22px;
+}
+
+.reveal #image-deck img {
+	margin: 0px 0px;
+}
+
+span.tagged {
+    padding-top:5px;
+    padding-left:20px;
+    display:block;
+}
