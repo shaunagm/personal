@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Free Culture in an Expensive World - OpenSourceBridge 2016 - Keynote</title>
+
+	<meta name="description" content="Free culture in an expensive world: financial sustainability in FOSS">
+	<meta name="author" content="Shauna Gordon-McKeon">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/osb2016.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides" style="width:1350px; height:700px;">
+
+			<section class="title-page meta" data-background="#763626">
+				<h1>Free Culture</b>
+				<h3>in an</h3>
+				<h1>Expensive World</h1>
+				<p class="filler"></p>
+				<h4>OpenSourceBridge 2016</h4>
+				<p class="filler"></p>
+				<h5>Shauna Gordon-McKeon - <a href="https://twitter.com/shauna_gm">@shauna_gm</a></h5>
+				<h5>Slides @ <a href="http://bit.ly/osb2016-keynote">bit.ly/osb2016-keynote</a></h5>
+
+						<aside class="notes">
+							Thanks for having me!<br />
+							about money & sustainability in FOSS<br />
+							not an economist or business person but I've been on enough mailing lists... to see many arguments break
+							out about money (esp corp money) in FOSS<br />
+							money in foss is important but fraught, but money always is<br />
+							At its heart, our question is “How do we get free culture projects the resources they need?”
+						</aside>
+			</section>
+
+			<section data-background="images/osb2016/fighting.jpg">
+						<aside class="notes">
+							Humans have been fighting over resources for tens of thousand of years with words and with weapons<br />
+							We can't resolve this question today, or this year, or this decade, or maybe ever.<br />
+							These are deep waters, folks.  We may never get to the bottom of them. <br />
+							But it's important that we keep trying, because without enough resources our communities and our projects will continue to struggle.
+						</aside>
+			</section>
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<h3><a href="http://bit.ly/fcew-repo">http://bit.ly/fcew-repo</a></h3>
+
+						<aside class="notes">
+							My original proposal centered this talk around a project of mine.<br />
+							Same name - it's an interview project, goal is collecting experiences, resources, insights<br />
+							It's volunteer - can't tell if it's ironic or merely fitting but I haven't had time to do much<br />
+							There is some material there, and I invite you to contribute to it.  But I can't base this talk on it.
+						</aside>
+			</section>
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<h3><a href="http://bit.ly/fcew-repo">http://bit.ly/fcew-repo</a></h3>
+
+						<aside class="notes">
+							So instead, I'm going to take you on a whirlwind tour, covering:<br />
+							current methods, why their insufficient, roadblocks, next steps<br />
+							I’m going to start with the phrase that inspired this talk. <br />
+							It’s a pretty common catch phrase that’s used to describe free software and to emphasize its political underpinnings. <br />
+							If you know it, shout it out.
+						</aside>
+		 </section>
+
+			<section class="second" data-background="#336B87">
+				<h3>"Free as in speech, not as in beer"</h3>
+						<aside class="notes">
+								I don't like this catchphrase<br />
+								Not because I dislike being political.  I love being political!<br />
+								I dislike it because it's so not that easy to separate politics from money<br />
+								Ask campaign finance reformers in the US
+						</aside>
+			</section>
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<ul>
+					<li>The freedom to run the program as you wish, for any purpose (freedom 0).</li>
+					<p class="filler"></p>
+					<li>The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1).</li>
+					<p class="filler"></p>
+					<li>The freedom to redistribute copies so you can help your neighbor (freedom 2).</li>
+					<p class="filler"></p>
+					<li>The freedom to distribute copies of your modified versions to others (freedom 3).</li>
+				</ul>
+
+						<aside class="notes">
+							The first two freedoms in this definition revolve around personal liberty.<br />
+							They take for granted that a user has a piece of software and guarantees them the right to understand and to change it.<br />
+							But the second two freedoms revolve around property rights.
+						</aside>
+			</section>
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<ul>
+					<li>The freedom to run the program as you wish, for any purpose (freedom 0).</li>
+					<p class="filler"></p>
+					<li>The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1).</li>
+					<p class="filler"></p>
+					<li>The freedom to <span class="highlight-me">redistribute</span> copies so you can help your neighbor (freedom 2).</li>
+					<p class="filler"></p>
+					<li>The freedom to <span class="highlight-me">distribute</span>  copies of your modified versions to others (freedom 3).</li>
+				</ul>
+
+						<aside class="notes">
+							They make claims about how software should be distributed.<br />
+							Whether or not you agree with the claim, it *is* a claim about property.<br />
+							It does mean "free as in beer", more or less.<br />
+							So why do people keep using the catchphrase?<br />
+							Money == difficult topic, can tear relationships & communities apart.  Tempting to ignore it.<br />
+							But that gives us communities made of people who can afford to ignore it.
+						</aside>
+
+			</section>
+
+			<section class="quote" data-background="#763626">
+				<p>"Going back to their houses, I first heard the phrase “We don’t discuss money.”
+				My mom discussed money, my dad, far away in northern California hardly discussed anything
+				else.  How could you not discuss money? It was like a family that announce they didn’t allow
+				the mention of food. Or hope."</p>
+				<p>- Quinn Norton, <a href="http://www.quinnnorton.com/said/?p=610">Count</a></p>
+
+						<aside class="notes">
+							Post from Quinn Norton that stuck with me.<br />
+							She talks about growing up poor in a gentrifying neighborhood, and making friends with wealthier neighbors. <br />
+							{read}<br />
+							Ignoring money is a privilege.  Ignoring money is a political decision.	<br />
+							We talk about the four software freedoms, but there’s another, more famous set of four freedoms – FDR’s:
+						</aside>
+			</section>
+
+			<section data-background="images/osb2016/freedoms.jpg">
+						<aside class="notes">
+							Freedom from want, in our capitalist society, usually means having money.<br />
+							To care about money - to care about giving people the resources they need - is in its own way to care about freedom.<br />
+						</aside>
+			</section>
+
+			<section data-background="images/osb2016/business.png">
+				<aside class="notes">
+					But of course, not all free culture activists do ignore money.<br />
+					In some ways, the decision to rebrand “free software” as “open source” and to actively court the interest and investment of for-profit companies can be viewed as a collective acknowledgment of the importance of money.
+				</aside>
+			</section>
+
+			<section class="quote" data-background="#763626">
+				<p>"Open source enables a development method for software that harnesses the power of distributed peer
+					review and transparency of process. The promise of open source is higher quality, better reliability,
+					greater flexibility, <span class="highlight-me">lower cost</span>, and an end to predatory vendor lock-in."
+
+							<aside class="notes">
+								Open Source Initiative, steward for OS definition, highlights market competitiveness of FOSS<br />
+								This rebranding has been very successful<br />
+								Anyone who says "there's no money in open source" is wrong.<br />
+								There are many projects and individuals that use for-profit models to build and maintain OSS.<br />
+								Let's talk about some of them!
+							</aside>
+				</section>
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<h3>Models</h3>
+				<p class="fragment">support, training and integration</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+
+						<aside class="notes">
+							Best known example: red hat - 8000 employees, over a billion in revenue<br />
+							Provides flagship product: RHEL, which has subscription based support, integration, training<br />
+							Other projects: Revolution R (Microsoft); HortonWorks (Apache Hadoop)<br />
+							Red Hat employs ppl to work on Linux - not the only one!
+						</aside>
+
+			</section>
+
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<h3>Models</h3>
+				<p>support, training and integration</p>
+				<p>vendor-neutral corporate foundation</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+
+						<aside class="notes">
+							"Who Writes Linux" 2015 states over 80% of contribs are employeed by companies, 11.8% unpaid.<br />
+							That's thousands of people employed by companies to work on Linux.<br />
+							Additionally, the Linux Foundation itself employs Linux developers, including Linus Torvalds.  Over 500 companies donate money.<br />
+							It bills itself as vendor neutral but "platinum" members donating half a mil or more get a seat on the board of directors, and together for a majority.<br />
+							Until 2016 individuals could be members and run for two board seats, but in Jan 2016 the bylaws were quietly changed to get rid of individual memberships.
+						</aside>
+
+			</section>
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<h3>Models</h3>
+				<p>support, training and integration</p>
+				<p>vendor-neutral corporate foundation</p>
+				<p>affiliate advertising</p>
+				<p class="fragment">hosting</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+
+						<aside class="notes">
+							Another model is Mozilla Firefox.  Arguably this should be filed under not-for-profit.<br />
+							Worth pointing out their model.  Used to be google made up 98% of MF revenue, now country-by-country.<br />
+							More common method is hosting.  Matt Mullenweg founded Wordpress, which is GPL and overseen by non-profit WP foundation.<br />
+							Also founded Automattic, successful Wordpress hosting platform.<br />
+							Two other pay for host: Discourse, a community discussion platform, and Ghost, a blogging platform.
+						</aside>
+			</section>
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<h3>Models</h3>
+				<p>support, training and integration</p>
+				<p>vendor-neutral corporate foundation</p>
+				<p>affiliate advertising</p>
+				<p>hosting</p>
+				<p>freemium</p>
+				<p class="fragment">open core</p>
+				<p class="fragment">dual licensing</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+
+						<aside class="notes">
+							That's the famous ones!  What else?<br />
+							Controversial "Freemium" model.  Why is it controversial?  I'll tell you about that in a bit.  Also used by PyCharm & a # of others.<br />
+							Offers free open source version and proprietary, fully featured version for pay.<br />
+							Related is "open core" model where the core is open but there are proprietary add ons or plugins.<br />
+							Similar yet distinct is "dual licensing".<br />
+							Attractive to customers who want to use the project in their own proprietary product & can't use GPL.  Example: MySQL
+						</aside>
+
+			</section>
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<h3>Models</h3>
+				<p>support, training and integration</p>
+				<p>vendor-neutral corporate foundation</p>
+				<p>affiliate advertising</p>
+				<p>hosting</p>
+				<p>freemium</p>
+				<p>open core</p>
+				<p>dual licensing</p>
+				<p>sponsored by proprietary company</p>
+				<p class="fragment">customization through agencies</p>
+				<p class="fragment">freelance development</p>
+				<p class="fragment">bounties</p>
+
+						<aside class="notes">
+							Google: Go, Angular, Android, Chromium (note: Chrome/Chromium is "freemium")<br />
+							Not just tech companies: Django framework developed @ Lawrence Journal-World.<br />
+							Web dev agencies like Caktus Group (Django) and Boston's Bocoup (Javascript - makes Grunt, contributes to jQuery, Node, others.<br />
+							Freelance:  Kronda Adair talk tomorrow "Building a Life with Wordpress" - Wordpress, Django, Drupal, Bootstrap, more<br />
+							Topic specific: CiviCRM used by non-profits and educational platform open EdX.<br />
+							Bounties!
+						</aside>
+
+			</section>
+
+			<section data-background="images/osb2016/headlines.png">
+						<aside class="notes">
+							With so many great examples, tempting to say "open source has won".<br />
+							But if it has, why is there still so much proprietary software?<br />
+							Why are important projects still struggling to get resources they need to be competitive, or to be developed at all?
+						</aside>
+			</section>
+
+			<section class="quote" data-background="#763626">
+				<p>"Although the Open Source Initiative suggests "the promise of open source is better quality, higher reliability, more flexibility," this promise is not always realized. Although we do not often advertise the fact, any user of an early-stage free software project can explain that free software is not always as convenient, in purely practical terms, as its proprietary competitors. Free software is sometimes low quality. It is sometimes unreliable. It is sometimes inflexible."</p>
+				<p>- Benjamin Mako Hill, <a href="https://mako.cc/writing/hill-when_free_software_isnt_better.html">When Free Software Isn't Better</a></p>
+
+						<aside class="notes">
+							Benjamin Mako Hill wrote a post back in 2010 where he points out the flaws in the OSI’s definition:
+							<br />
+							It’s vitally important not to equate the success of free and open source software with success in the market.
+							<br />
+							We can’t ignore money, but we also shouldn’t be tied to a single model of sustainability or a single standard for success.
+							<br />
+							A conversation that’s focused on profit is a conversation that’s way too narrow.
+							<br />
+							So what alternatives are there?
+						</aside>
+
+			</section>
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<h3>(More) Models</h3>
+				<p class="fragment">volunteer</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+
+				<aside class="notes">
+					First off – the most common open source model: volunteering. <br/>
+					I can't emphasize this enough: volunteering is not some sort of null option – all projects require resources.<br />
+					Volunteer projects are funded through donation of labor.<br />
+					This is not necessarily a bad thing, but it is absolutely a funding model.
+				</aside>
+
+			</section>
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<h3>(More) Models</h3>
+				<p>volunteer</p>
+				<p>software-focused non-profit</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+
+						<aside class="notes">
+							Mozilla (kinda).  More famously: Wikipedia.  $70 mil a year in donations, 280 staff (yes, I did get that info from their wikipedia page)<br />
+							Most OSS non-profits not as well funded.
+						</aside>
+
+			</section>
+
+			<section data-background="images/osb2016/django.png">
+				<aside class="notes">
+					I think Django is pretty sadly underfunded given the # of projects and companies that use it, so I've included it here.<br />
+					Also: Python Software Foundation, Apache Software Foundation, <br />
+					Sahana, which develops open source disaster management software<br />
+					OpenMRS, which is an open source medical records system led by two non-profits. <br />
+					Can't name them all.
+				</aside>
+			</section>
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<h3>(More) Models</h3>
+				<p>volunteer</p>
+				<p>software-focused non-profit</p>
+				<p>other non-profit</p>
+				<p class="fragment">government</p>
+				<p class="fragment">academia</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+
+						<aside class="notes">
+							Other-focused: Sunlight, COS, ONA.  These are just three I've actively worked with or volunteered for - there are hundreds more.<br />
+							More models: government-developed FOSS.  Britta Gustafson talk on 18f, develops all OSS.  They are also experimenting with microprocurements.<br />
+							Academia: NumFocus foundation is non profit but their projects are often staffed by academics, for example Project Jupyter.<br />
+							MIT: Scratch & AppInventor for beginning developers.  Sustainable Engineering Lab @ Columbia.  <br />
+							George Mason University’s Center for History and New Media develops Zotero. <br />
+							Oregon’s own OSU has the Open Source Lab.  Again, I can't name them all.
+						</aside>
+
+			</section>
+
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<h3>(More) Models</h3>
+				<p>volunteer</p>
+				<p>software-focused non-profit</p>
+				<p>other non-profit</p>
+				<p>government</p>
+				<p>academia</p>
+				<p>crowdfunding</p>
+				<p class="fragment">grants</p>
+				<p class="fragment">fellowships, internships & retreats</p>
+
+						<aside class="notes">
+							One-off - Kickstarter, Indiegogo; ongoing - Patreon; experimental: Snowdrift<br />
+							Grants: Knight Foundation, Shuttleworth Foundation, Open Society Foundation -- regular give OSS grants.  Open Technology Fund (Privacy-focused)<br />
+							Fellowships etc many of which are targeted at newcomers, underrepresented people:<br />
+							GSoC, Outreachy, Rails Girls Summer of Code, Summer of Code in Space, Knight Mozilla Fellowships, Code for America, Code for Progress & More.  Stripe "Open Source Retreat" for experienced devs.
+						</aside>
+			</section>
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<h3>(More) Models</h3>
+				<p>volunteer</p>
+				<p>software-focused non-profit</p>
+				<p>other non-profit</p>
+				<p>government</p>
+				<p>academia</p>
+				<p>crowdfunding</p>
+				<p>grants</p>
+				<p>fellowships, internships & retreats</p>
+						<aside class="notes">
+							“Shauna,” you might be ready to protest.  “You’ve just named a ton of projects that are funded in a variety of ways.  Surely one of these options will work for me and/or my project!”<br />
+							Maybe one will!  I encourage you.  They all have their pros and cons.  I'd go into detail about those but presumably you want to hear other talks today.<br />
+							(But maybe a pros & cons of FOSS models BoF?)<br />
+							Anyway, these models are not enough, because we've still got problems.
+						</aside>
+			</section>
+
+			<section class="third" data-background="#2A3132">
+				<h3>What's the problem?</h3>
+						<aside class="notes">
+							Let's take a moment to define them, because without clearly defining our problems we won't know what success looks like.<br />
+							This is my definition of the problem.  Yours may be different - whatever it is, I encourage you to articulate it, including what success looks like to you.
+						</aside>
+			</section>
+
+			<section class="third" data-background="#2A3132">
+					<h3>Problem 1</h3>
+					<h3>Key technologies are still proprietary</h3>
+					<p class="filler"></p>
+					<ul class="fragment">
+						<li>Widely used by non-developers</li>
+						<li>Widely used by developers</li>
+						<li>Likely to influence future technology</li>
+						<li>Intersect with other areas of concern</li>
+					</ul>
+					<p class="filler"></p>
+					<p class="fragment"><b>Measure success by: how competitive open source projects are in these key areas.</b></p>
+
+							<aside class="notes">
+								 “Key technologies” is an ill-defined and ever-changing term.  The FSF has a high priority projects list that's a good start. <br />
+								What are some things that might make a technology key?<br />
+								Intersections: privacy, harassment, government transparency, open science and medicine, and more.
+							</aside>
+
+			</section>
+
+			<section class="third" data-background="#2A3132">
+					<h3>Problem 2</h3>
+					<h3>Many projects are not 'well rounded'</h3>
+					<p class="filler"></p>
+					<ul class="fragment">
+						<li>Design</li>
+						<li>UX research</li>
+						<li>Documentation</li>
+						<li>Translation</li>
+					  <li>Outreach</li>
+						<li>Teaching & mentorship, including technical mentorship</li>
+						<li>Community management</li>
+						<li>Project management</li>
+						<li>Marketing & publicity</li>
+					</ul>
+					<p class="filler"></p>
+					<p class="fragment"><b>Measure success by: how many non-coders are in our communities and how prominent they are.</b></p>
+
+							<aside class="notes">
+								Why are so many of our projects not competitive?  In part, not 'well rounded'.  Over-emphasize code contributions, and in particular new feature development over easing technical debt.<br />
+								Under-valued: in companies, these jobs pay less.  In FOSS projects, these tasks get less acknowledgement and reputation and enthusiastic "thank yous".  No wonder so many projects have trouble attracting vital contributions.
+							</aside>
+			</section>
+
+			<section class="third" data-background="#2A3132">
+					<h3>Problem 3</h3>
+					<h3>Lack of diversity</h3>
+					<p class="filler"></p>
+					<p>Recommended: <a href="http://www.ashedryden.com/blog/the-ethics-of-unpaid-labor-and-the-oss-community">The Ethics of Unpaid Labor and the OSS Community</a> by Ashe Dryden</p>
+					<p class="filler"></p>
+					<p class="fragment"><b>Measure success by: if our communities become as diverse as the general population.</b></p>
+
+					<aside class="notes">
+						Not representative of general population.  In part because most forms of oppression have a hefty financial impact.<br />
+						Many of you have probably read Ashe's post, where she discusses how the dependence on unpaid labor in FOSS discriminates against people from marginizalized communities who are less able to donate their time.<br />
+						This lack of diversity is unfair to those excluded and hypocritical for a community that prides itself on being free and open.<br />
+						Some of the most successful and impactful projects come from lived experience.  We talk about developers scratching their own itch – what about developers tracking their
+						own periods or protecting themselves from harassment or abuse?  What kind of amazing open source projects haven't
+						even be conceived of because the people who can think of them aren't part of our community?
+					</aside>
+
+			</section>
+
+			<section class="third" data-background="#2A3132">
+					<h3>Problem 4</h3>
+					<h3>Burnout</h3>
+					<p class="filler"></p>
+					<p class="fragment"><b>Measure success by: if our community members are generally happy and not stressed.</b></p>
+
+							<aside class="notes">
+								A way of measuring success here is surveying open source community members and seeing if they report decreased stress, increased happiness, a desire to continue working on their projects and within open source as a whole, and a sense that they and their communities are equal to the challenges ahead of them.
+							</aside>
+			</section>
+
+			<section class="third" data-background="#2A3132">
+					<h3>Problem 4</h3>
+					<h3>Burnout</h3>
+					<p class="filler"></p>
+					<p class="fragment"><b>Measure success by: if our community members are generally happy and not stressed.</b></p>
+
+							<aside class="notes">
+								Four ways we're currently struggling, and four ways to measure success.<br />
+								We need to be more competitive, more well rounded, more diverse, and emotionally healthier.<br />
+								How do we move towards that?<br />
+								There are a few things holding us back.  I want to talk about three of them – three fears that I think are derailing our conversations.
+							</aside>
+			</section>
+
+			<section class="fourth" data-background="#90AFC5">
+					<h3>Fear of Money</h3>
+							<aside class="notes">
+								Ashe's essay in response to a post by David Heinemeier Hansson, aka DHH, aka creator of Ruby on Rails
+							</aside>
+			</section>
+
+			<section class="quote" data-background="#763626" data-transition="none">
+				<p>"External, expected rewards diminish the intrinsic motivation of the fundraising open-source contributor. It risks transporting a community of peers into a transactional terminal. And that buyer-seller frame detracts from the magic that is peer-collaborators."</p>
+				<p>- David Heinemeier Hansson, <a href="http://david.heinemeierhansson.com/2013/the-perils-of-mixing-open-source-and-money.html">The perils of mixing open source and money</a></p>
+
+						<aside class="notes">
+							That bit about the magic of peer collaboration resonates with me.  But there’s another line in this quote that sticks with me, and not in a good way: “expected rewards diminish intrinsic motivation”.
+						</aside>
+			</section>
+
+			<section class="quote" data-background="#763626" data-transition="none">
+				<p>"<span class="highlight-me">External, expected rewards diminish the intrinsic motivation</span> of the fundraising open-source contributor. It risks transporting a community of peers into a transactional terminal. And that buyer-seller frame detracts from the magic that is peer-collaborators."</p>
+				<p>- David Heinemeier Hansson, <a href="http://david.heinemeierhansson.com/2013/the-perils-of-mixing-open-source-and-money.html">The perils of mixing open source and money</a></p>
+						<aside class="notes">
+							Social psych jargon. Translated it means: "If you inherently like or want to do something..."<br />
+							dhh cites Dan Ariely and Alfie Kohn, but no consensus<br />
+							meta-analysis from 2014 - 4 decades, 180+studies, 200,000+ people<br />
+							they say rewards increase motivation
+						</aside>
+			</section>
+
+			<section class="quote" data-background="#763626" data-transition="none">
+				<p>"<span class="highlight-me">External, expected rewards diminish the intrinsic motivation</span> of the fundraising open-source contributor. It risks transporting a community of peers into a transactional terminal. And that buyer-seller frame detracts from the magic that is peer-collaborators."</p>
+				<p>- David Heinemeier Hansson, <a href="http://david.heinemeierhansson.com/2013/the-perils-of-mixing-open-source-and-money.html">The perils of mixing open source and money</a></p>
+						<aside class="notes">
+								are Ariely and Kohn wrong?  not necessarily.  social psychology is a troubled field.  & I say this as a former social psychologist.<br />
+								take social psych results as suggestions, not facts.  but - they're great suggestions to provoke research and new approaches.<br />
+								There's other research we could discuss but I cut it for time -- social psychology of open source collaboration BoF anyone?<br />
+								in conclusion: I'm not saying shut down talk about social psychology.  but don't let social psych shut down talk about money.
+						</aside>
+			</section>
+
+			<section class="fourth" data-background="#90AFC5" data-transition="none">
+					<h3>Fear of Corporations</h3>
+
+					<aside class="notes">
+						I’ve already highlighted a number of open source projects supported by for-profit companies.<br />
+						These efforts are not without their critics, and these critics are not without their reasons.<br />
+						Fear that goals of companies and community will not align.  That when there's conflict, companies will pursue their bottom lines.
+						And perhaps they will.  But “for profit companies” are not a monolith, any more than “open source software” is. <br />
+						Different ways that companies can interact with projects and if we can identify the beneficial ways than we can support them while discouraging others.
+					</aside>
+			</section>
+
+			<section class="fourth" data-background="#90AFC5" data-transition="none">
+					<p><span class="strike">Are for-profit companies good or bad for open source?</span></p>
+					<p class="filler"></p>
+					<p>What kinds of negative influences have they had?  What kind of positive ones?</p>
+					<p>How do licensing decisions, governance structures or business models change their influence?</p>
+					<p>Does the company size, how the company was founded, or where the company was incorporated play a role?</p>
+					<p>What company behavior is unacceptable, and what's just annoying?</p>
+
+					<aside class="notes">
+						So scratch out the question “are companies good for open source?”  It’s way too broad. Instead, I want to know...
+					</aside>
+			</section>
+
+			<section class="fourth" data-background="#90AFC5" data-transition="none">
+					<p><span class="strike">Are for-profit companies good or bad for open source?</span></p>
+					<p class="filler"></p>
+					<p>What kinds of negative influences have they had?  What kind of positive ones?</p>
+					<p>How do licensing decisions, governance structures or business models change their influence?</p>
+					<p>Does the company size, how the company was founded, or where the company was incorporated play a role?</p>
+					<p>What company behavior is unacceptable, and what's just annoying?</p>
+
+					<aside class="notes">
+						Here's a quick case study: 2004 "open source" SugarCRM released.  Quickly popular, lots of downloads, tens of mil in VC investment.<br/>
+						By 2011 company went "freemium", releasing paid proprietary versions.  By 2014, they announced they were no longer supporting open source version.<br />
+						So do we conclude companies are bad for open source?  Company SuiteCRM forked the OS version and adopted a pay for hosting model.  They seem to do a good job from this distant vantage point.<br />
+						Perhaps instead the lesson to learn is that “freemium” open source business models leave projects more vulnerable than “hosting” open source business models.
+					</aside>
+
+			</section>
+
+			<section class="fourth" data-background="#90AFC5" data-transition="none">
+					<p><span class="strike">Are for-profit companies good or bad for open source?</span></p>
+					<p class="filler"></p>
+					<p>What kinds of negative influences have they had?  What kind of positive ones?</p>
+					<p>How do licensing decisions, governance structures or business models change their influence?</p>
+					<p>Does the company size, how the company was founded, or where the company was incorporated play a role?</p>
+					<p>What company behavior is unacceptable, and what's just annoying?</p>
+
+					<aside class="notes">
+						There are a lot of stories to be told and lessons to be learned here, and I’m looking forward to that.
+						<br />
+						Bradley Kuhn’s talk on Thursday about “The Politics of Cooption in Open Source and Free Software”.
+						<br />
+						Another person: Karl Fogel of Open Tech Strategies.  He posted a draft “Company Code of Conduct” for
+						people to use when dealing with new companies that want to contribute to an existing open source project.
+					  <br /> Specific use case but great he’s identifying concrete behaviors that indicate real commitment.
+					</aside>
+
+			</section>
+
+			<section class="fourth" data-background="#90AFC5">
+					<h3>Fear of Communism</h3>
+
+					<aside class="notes">
+						In 2005, Bill Gates famously called FOSS activists "new modern-day sort of communists"<br />
+						By textbook definition, this is ludicrous, but in American culture "communism" is a smear used to discourage forms of collective action.<br />
+						Since many FOSS people lean libertarian, this makes it extra difficult to talk about.<br />
+						But let's leap right in and talk about the role of state intervention.<br />
+						In “The Entrepreneurial State”, Mariana Mazzucato challenges idea that business responsible for tech development.<br />
+						Despite protests that gov't should "step back and let business innovate" the state has stepped forward to develop our most important technologies.
+					</aside>
+			</section>
+
+			<section class="fourth" data-background="#90AFC5" data-transition="none">
+				  <img src="images/osb2016/apple.jpg" style="height:60%">
+					<p>Figure 13. Origins of popular Apple products. Copied from The Entrepreneurial State –
+						Debunking Public vs. Private Sector Myths (p. 116), by M. Mazzucato, 2013, Anthem Press.</p>
+
+						<aside class="notes">
+								Take, for example, Apple’s success.<br />
+								Just some of the relevant technologies. The US has also provided tax credits and other benefits to get businesses to adapt these technologies for commercial use. <br />
+								Socialized risk, privatized profits.
+						</aside>
+			</section>
+
+			<section class="fourth" data-background="#90AFC5" data-transition="none">
+				  <img src="images/osb2016/apple.jpg" style="height:60%">
+					<p>Figure 13. Origins of popular Apple products. Copied from The Entrepreneurial State –
+						Debunking Public vs. Private Sector Myths (p. 116), by M. Mazzucato, 2013, Anthem Press.</p>
+
+						<aside class="notes">
+							Other technologies - internet and email (DARPA); Tor (onion routing invented at naval research lab, currently funded by various depts)<br />
+  					  So US gov't already does a lot of funding. Can we more explicitly direct our tax dollars towards open source software?<br />
+						</aside>
+			</section>
+
+			<section data-background="images/osb2016/codepolicy.png">
+
+						<aside class="notes">
+							Gov't offered up Federal Source Code Policy for public comment.<br />
+							Federal gov't work is technically public domain but practically most of it is not accessible.	<br />
+							Draft policy also requires that 20% or more of third party software developed for gov't be open.<br />
+							Official policy not enacted or even released yet, but pushing gov't to work more openyl is one vital thing we can do.<br />
+							Another option is to seek direct public funding for OSS.  The NSF, for instance, has funded a variety of grants for open source research.
+						</aside>
+
+			</section>
+
+			<section data-background="images/osb2016/bridges.png">
+
+						<aside class="notes">
+								Of course, governmental intervention isn’t the only way for people to act collectively.<br />
+								Kelsey Gilmore-Innis gave a fantastic talk in January called "What Tech Workers Can Learn From Harry Bridges".  There's so much there
+								that I don't have time to cover, so please, please check it out.<br />
+								Tech workers as a group are in a rare position of power, one that we won’t have forever.  If we act together, we could achieve a lot for ourselves, for other works, & for open source.<br />
+								Just take a moment to dream with me here - what if employees demanded that they be able to release their code as open source, or a fee be paid by their employer to support the open source project of their choice?
+						</aside>
+
+			</section>
+
+			<!-- Press down to see Tragedy of Commons stuff (skipped for time) -->
+			<section>
+
+					<section data-background="images/osb2016/bridges.png">
+								<aside class="notes">
+									Many other ways to act collectively besides government and unions.<br />
+								  I had a whole section about the tragedy of commons here, and how scholarship on how people manage
+									various kinds of resources can inspire how we manage our software commons.  BoF anyone?<br />
+									Summing up: every society has both protections for private interests and ways to encourage collective benefit.<br />
+									Every individual has both competitive and collaborative instincts.<br />
+									Advocating for altruism is not the first step on the road to a totalitarian state.  It’s an embracing of the best parts of ourselves.
+								</aside>
+					</section>
+
+					<section class="fourth" data-background="#90AFC5" data-transition="none">
+							<h3>Tragedy of the Commons</h3>
+							<p class="filler"></p>
+							<p>A common good can be destroyed by individuals using it self-interestedly.</p>
+							<p class="filler"></p>
+							<img src="images/osb2016/openssl.png">
+							<p class="filler"></p>
+							<p>Elinor Ostrom won nobel prize for her work on "Governing the Commons".</p>
+							<p><a href="http://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1276&context=lcp">“Ideas, Artifacts and Facilities: Information as a common-pool resource”</a>,
+								written with Charlotte, about governing the information commons.</p>
+					</section>
+
+					<section class="fourth" data-background="#90AFC5" data-transition="none">
+							<h3>Tragedy of the Commons (cont)</h3>
+
+							<p>Ostrom & Hess see information as a common-pool resource, rather than an "open access" resource (Lessig, Benkler).
+							Distinction?  Exclusion.</p>
+
+							<p>Exclusion feels anathema in open source - but what ideas can we come up with?</p>
+							<ul>
+								<li><a href="http://www.wired.com/2016/03/former-open-sourcers-ask-companies-pay-fair-share/">Fair source license</a></li>
+								<li>Stronger membership organizations with greater benefits</li>
+								<li>Exclusion not on code use but on use of community time & labor</li>
+							</ul>
+					</section>
+
+			</section>
+
+			<section data-background="images/osb2016/steps.jpg">
+				<h1>Next Steps</h1>
+				<aside class="notes">
+					Getting to the end of the talk, so let's focus on specific steps.<br />
+					To start off, we need to talk more openly and empathetically about money, in individual conversations and in our public discussions at conferences, in workplaces and online.<br />
+					Why is it so important to talk about money?  Because everyone views money differently.  It's an age-old and familiar abstraction - but a super leaky one.
+				</aside>
+			</section>
+
+			<section data-background="images/osb2016/scale.png">
+					<aside class="notes">
+						 Assuming that a dollar to me equals a dollar to you can cause very real problems.  Take an example with sliding scale.
+ 					  <br/>
+							Hadassah Damien of Ride Free: Fearless Money has a great post
+						 explaining why and how to explain your sliding scale.  They reference this explanation from Little Red Bird Botanicals.
+					</aside>
+			</section>
+
+			<section data-background="images/osb2016/scale.png">
+					<aside class="notes">
+						Silence about money reinforces inequality.  It's well documented that men get paid more than women and whites more than nearly every other racial and ethnic group.<br />
+						Transparency won't fix everything, but it's a good step.<br />
+						As long as talking about money is stigmatized, people will tend to discuss money only with close friends, who will tend to be in their demographic group, who will tend to be paid the same as them.<br />
+					</aside>
+			</section>
+
+			<section data-background="images/osb2016/scale.png">
+					<aside class="notes">
+						Remember, it's important to be empathetic.  Many have good reason not to talk about money.  This isn't about pushing people out of their comfort zone,
+						it's about changing what's comfortable for everyone.
+					</aside>
+			</section>
+
+			<section data-background="images/osb2016/steps.jpg" style="background: rgba(255,255,255,0.8)" class="white">
+					<h3>What can you do?</h3>
+					<p class="filler"></p>
+					<p><b>Join my interview project: Free Culture in an Expensive World</p>
+					<p>Propose money-related talks, open spaces and BoFs at conferences</p>
+					<p>Write about money in free culture on your social media</p>
+					<p>Share the commentary of others</p>
+					<p>Find a person or two you feel comfortable with and start a conversation</b></p>
+			</section>
+
+			<section data-background="images/osb2016/infrastructure.jpg">
+						<aside class="notes">
+							Another thing I’d really love to see is investment in community infrastructure.<br />
+							Infrastructure is the basic system which supports a community and allows it to function.  Development
+							and improvement of infrastructure aids the entire community.<br />
+							There are a few different kinds of technological infrastructure out there - for instance, package managers - and it needs our support.  But we also need to support community infrastructure.
+						</aside>
+			</section>
+
+			<section data-background="images/osb2016/infrastructure.jpg" style="background: rgba(255,255,255,0.8)" class="white">
+				<h3>Community Infrastructure</h3>
+				<p class="filler"></p>
+				<h5>Financial</h5>
+				<h5>Educational</h5>
+				<h5>Design, documentation, marketing, and more?</h5>
+
+						<aside class="notes">
+							What if there was an organization that projects could turn to for financial advice for help applying to grants, running crowdfunding campaigns, getting non-profit status, or deciding between business models?<br />
+							An open knowledge base, contributed to by many and maintained by a core team with expertise?  <br />
+							Many small projects get stuck in a position where they need money to buy time - but first, they need time to find money.  This is one way to break that cycle.
+						</aside>
+			</section>
+
+			<section data-background="images/osb2016/infrastructure.jpg" style="background: rgba(255,255,255,0.8)" class="white">
+				<h3>Community Infrastructure</h3>
+				<p class="filler"></p>
+				<h5>Financial</h5>
+				<h5>Educational</h5>
+				<h5>Design, documentation, marketing, and more?</h5>
+
+						<aside class="notes">
+							There are other kinds of infrastructure I’d like to see supported too.  Projects like Outreachy and OpenHatch bring new and diverse contributors into a wide variety of free and open source projects, but they can’t do it without support.<br />
+							We talked before about areas that FOSS is historically weak in - design, documetnation, marketing, etc - which could be improved
+							by an org which works on specifying best practices for open source projects and providing consultation and advice.
+						</aside>
+			</section>
+
+			<section data-background="images/osb2016/steps.jpg" style="background: rgba(255,255,255,0.8)" class="white">
+					<h3>Submit patches upstream</h3>
+					<p class="filler"></p>
+					<p><b>Advocate for classic social safety nets, for basic income, for living wages, or other ways to fight poverty and precarity</p>
+					<p class="filler"></p>
+					<p>Solidarity with other workers & other people, especially in tech spaces - check out <a href="http://www.siliconvalleyrising.org/">Silicon Valley Rising</a></p>
+					<p class="filler"></p>
+					<p>Buy tech devices that don't harm human or natural resources</b></p>
+
+					<aside class="notes">
+						The open source community is far from the only one struggling with money, and the pressures we face are not entirely of our own making.  I think it's important that we keep hacking on solutions from our end, but sometimes it's worth submitting a patch upstream – to the source of the problem.
+					</aside>
+			</section>
+
+			<section class="second" data-background="#336B87" data-transition="none">
+					<h3>In Summary</h3>
+					<p class="fragment">Ignoring money isn't an option.  But neither is embracing the market without reservations.</p>
+					<p class="fragment">There are many models for sustaining a project, but we're still struggling.</p>
+					<p class="fragment">We're not competitive enough, not well-rounded enough, not diverse enough, not healthy enough.</p>
+					<p class="fragment">We've got a lot of hangups: fear of money, fear of corporations, fear of being branded socialist or just too idealistic.</p>
+					<p class="fragment">But we can move forward by talking about money, by supporting community infrastructure and by addressing financial issues in our societies at large.</p>
+			</section>
+
+			<section class="second" data-background="#336B87" data-transition="none">
+				<h2>How do we get the resources we need?</h2>
+				<p class="filler"></p>
+				<h2 class="fragment">Together</h2>
+
+				<aside class="notes">
+					I hope this wasn’t too much of a whirlwind for you all.  I cut out a lot of relevant stuff but I wanted to leave as much as I could in, because I think it’s worth stressing the complexity and the enormity of this issue.  We’re not going to get very far on our own - this is something we need to address together.
+					<br />
+					Luckily for us, we're not alone.  Open source is all about working openly and collaboratively.  Let’s apply our process and our values to this vital issue.
+					<br />
+					I said at the beginning of this talk that at its heart, our question is, “How do we get the resources we need?”  There are a hundred different answers, none of them complete, but I'll tell you my favorite: we get them together.
+				</aside>
+		 </section>
+
+		 <section class="meta" data-background="#763626">
+			 <h3>OSB sessions mentioned</h3>
+			 <p>Kronda Adair's <a href="http://opensourcebridge.org/sessions/1741">Building a Life with WordPress</a> (Weds 10am)</p>
+			 <p>Britta Gustafson's <a href="http://opensourcebridge.org/sessions/1750">Technical writing as public service: working on open source in government</a> (Weds 3:45pm)</p>
+			 <p>Bradley Kuhn's <a href="http://opensourcebridge.org/sessions/1754">The Politics of Cooption in Open Source and Free Software</a> (Thurs 10am)</p>
+			 <p class="filler"></p>
+			 <h3>Potential BoFs mentioned</h3>
+			 <p>Pros & cons of current models</p>
+			 <p>Social psychology of money & collaboration</p>
+			 <p>Governing the open source commons</p>
+			 <p>Financial "upstream"</p>
+		 </section>
+
+			<section class="meta small" data-background="#763626">
+					<h2>References</h2>
+					<p><a href="http://www.gnu.org/philosophy/free-sw.html">Free Software Definition</a>, Free Software Foundation, accessed June 2016</p>
+					<p><a href="http://www.quinnnorton.com/said/?p=610">Count</a>, Quinn Norton, 2012</p>
+					<p><a herf="https://opensource.org/about">About the Open Source Initiative</a>, Open Source Initiative, accessed June 2016</p>
+					<p><a href="http://www.linuxfoundation.org/publications/linux-foundation/who-writes-linux-2015">Who Writes Linux</a>, Linux Foundation, 2015</p>
+					<p><a href="http://www.theregister.co.uk/2016/01/25/linux_foundation_scraps_individual_membership/">Linux Foundation scraps individual membership</a>, Tim Anderson, The Register, 2016</p>
+					<p><a href="http://www.computerworld.com/article/2850464/mozilla-tells-google-its-not-you-anymore-its-yahoo.html">Mozilla tells Google, it’s not you (anymore), it’s Yahoo</a>, Gregg Keizer, Computer World, 2014</p>
+					<p><a href="https://mako.cc/writing/hill-when_free_software_isnt_better.html">When Free Software Isn't Better</a>, Benjamin Mako Hill, 2010</p>
+					<p><a href="http://www.fsf.org/campaigns/priority-projects/">High Priority Free Software Projects</a>, Free Software Foundation, accessed June 2016</p>
+					<p><a href="http://www.ashedryden.com/blog/the-ethics-of-unpaid-labor-and-the-oss-community">The Ethics of Unpaid Labor and the OSS Community</a>, Ashe Dryden, 2013</a></p>
+					<p><a href="http://david.heinemeierhansson.com/2013/the-perils-of-mixing-open-source-and-money.html">The perils of mixing open source and money</a>, David Heinemeier Hansson, 2013</p>
+					<p><a href="http://www.zdnet.com/article/commercial-open-source-a-misnomer/">Commercial open source, a misnomer?</a>, Dan Farber, ZDNet, 2005</p>
+					<p><a href="https://suitecrmondemand.com/whysuitecrm?id=3">The story behind SuiteCRM</a>, SuiteCRM.com, accessed June 2016</p>
+			</section>
+
+			<section class="meta small" data-background="#763626">
+					<h2>References (cont.)</h2>
+					<p><a href="http://blog.opentechstrategies.com/2016/06/oss_commercial_coc_draft/">Open Source Code of Conduct for Commercial Entities</a>, Karl Fogel, Open Tech Strategies, 2016</p>
+					<p>Mazzucato, M. (2013), <a href="http://marianamazzucato.com/publications/books/">“The Entrepreneurial State – Debunking Public vs. Private Sector Myths”</a>, Anthem Press, ISBN 978-0-857282-52-1.</p>
+					<p><a href="https://sourcecode.cio.gov/">Federal Source Code Policy</a>, accessed June 2016</p>
+					<p><a href="https://www.eff.org/deeplinks/2016/04/white-house-source-code-policy-big-win-open-government">White House Source Code Policy a Big Win for Open Government</a>, Elliot Harmon, Electronic Frontier Foundation, 2016</p>
+					<p><a href="http://nerd.kelseyinnis.com/blog/2016/01/06/what-tech-workers-can-learn-from-harry-bridges/">What Tech Workers Can Learn From Harry Bridges</a>, Kelsey Gilmore-Innis, 2016</p>
+					<p><a href="http://www.ridefreefearlessmoney.com/blog/2016/05/sliding-scale-1/">Sliding Scale: Why, How, and Sorting Out Who</> by Hadassah Damien, Ride Free: Fearless Money management, 2016</p>
+					<p><a href="www.littleredbirdbotanicals.com/sliding-scale-info/">Fee Scale</> by Little Red Bird Botanicals, accessed June 2016</p>
+					<p><a href="http://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1276&context=lcp">Ideas, Artifacts, and Facilities: Information as a Common-Pool Resource</a>. Hess, Charlotte and Elinor Ostrom. 2003. Law and Contemporary Problems. Vol. 66 Winter/Spring 2003 nos 1 and 2.</p>
+					<p><a href="http://www.wired.com/2016/03/former-open-sourcers-ask-companies-pay-fair-share/">One Startup’s Heretical Plan to Turn Open Source Code Into Cash</a> by Klint Finley, Wired, 2015</p>
+					<p><a href="http://www.siliconvalleyrising.org/">Silicon Valley Rising</a></p>
+			</section>
+
+			<section class="meta small" data-background="#763626">
+					<h2>Image Credits</h2>
+					<p><a href="https://en.wikipedia.org/wiki/Horses_in_warfare#/media/File:%C3%84gyptischer_Maler_um_1355_v._Chr._001.jpg">Ägyptischer Maler um 1355 v. Chr</a>, Wikimedia Commons, Public Domain</p>
+					<p><a href="https://en.wikipedia.org/wiki/Four_Freedoms#/media/File:FDR_Memorial_wall.jpg">Photo of FDR Memorial Wall</a>, author <a href="https://commons.wikimedia.org/wiki/User:BanyanTree">BanyanTree</a> assumed, Wikimedia Commons, CC BY-SA 3.0.</p>
+					<p><a href="https://www.flickr.com/photos/opensourceway/4427310974">Building an open source busines</a> by <a href="https://www.flickr.com/photos/opensourceway/">opensource.com</a>, CC BY-SA 2.0</p>
+					<p>Fig 13. Origins of popular Apple products. Copied from The Entrepreneurial State – Debunking Public vs. Private Sector Myths (p. 116), by M. Mazzucato, 2013, Anthem Press.</p>
+					<p><a href="https://www.flickr.com/photos/charleylhasa/6898001106">st. nicholas park</a> by <a href="https://www.flickr.com/photos/charleylhasa/">Charley Lhasa</a>, CC BY-SA 2.0</p>
+					<p><a href="https://www.flickr.com/photos/modofodo/15186476190/">Lake Hodges Dam</a> by <a href="https://www.flickr.com/photos/modofodo/">el-toro</a>, CC BY 2.0</p>
+					<p>Screenshot of <a href="https://twitter.com/csoghoian/status/454097458709401600">Tweet</a> by <a href="https://twitter.com/csoghoian">Christopher Soghoian</a>, April 2014</p>
+					<p>"An Injury to One is an Injury to All" -- could not find credit or license </p>
+			</section>
+
+     </div>
+
+  </div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+
+	<script>
+
+		// Full list of configuration options available here:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+			margin: 0.05,
+			width: 1200,
+			height:650,
+
+			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+			transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+			// Parallax scrolling
+			// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+			// parallaxBackgroundSize: '2100px 900px',
+
+			// Optional libraries used to extend on reveal.js
+			dependencies: [
+			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+			]
+		});
+
+	</script>
+
+</body>
+</html>
